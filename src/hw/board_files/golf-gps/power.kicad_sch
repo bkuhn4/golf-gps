@@ -3666,7 +3666,7 @@
 		)
 		(uuid "fd2afd7c-2406-461d-9a22-17c078e78a5a")
 	)
-	(text "Coin Cell Battery"
+	(text "Coin Cell Battery\nBackup"
 		(exclude_from_sim no)
 		(at 214.376 40.386 0)
 		(effects
