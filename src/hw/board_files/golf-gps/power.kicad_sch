@@ -6,9 +6,9 @@
 	(paper "A4")
 	(title_block
 		(title "Golf GPS")
-		(date "2025-06-18")
+		(date "2025-06-26")
 		(rev "0")
-		(company "Brady Kuhn")
+		(company "B. Kuhn")
 	)
 	(lib_symbols
 		(symbol "Battery_Management:MCP73831-2-OT"
@@ -623,224 +623,6 @@
 						)
 					)
 					(number "S1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Device:Battery"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "BT"
-				(at 2.54 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Battery"
-				(at 2.54 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 1.524 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 1.524 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Multiple-cell battery"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "batt voltage-source cell"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Battery_0_1"
-				(rectangle
-					(start -2.286 -1.27)
-					(end 2.286 -1.524)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -2.286 1.778)
-					(end 2.286 1.524)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -1.524 -2.032)
-					(end 1.524 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -1.524 1.016)
-					(end 1.524 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.016) (xy 0 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -0.508) (xy 0 -0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.778) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 3.048) (xy 1.778 3.048)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 3.556) (xy 1.27 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Battery_1_1"
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2829,6 +2611,102 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 43.18 81.28)
@@ -2841,6 +2719,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "58b33a49-ae13-4c7e-aa9d-3e5e14d55068")
+	)
+	(junction
+		(at 138.43 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6099517c-09b7-4859-86b5-49b6d540c9cb")
 	)
 	(junction
 		(at 113.03 127)
@@ -2861,10 +2745,28 @@
 		(uuid "7d3e5198-6c43-467b-9cef-b7b7a35d61e5")
 	)
 	(junction
+		(at 76.2 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "83132de8-530b-4903-8577-2bd7a509f632")
+	)
+	(junction
+		(at 102.87 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "83887e66-6eb5-44f1-a43b-9305935783e4")
+	)
+	(junction
 		(at 81.28 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8959f0c1-6705-4049-a4c8-5f87f3d81cd3")
+	)
+	(junction
+		(at 134.62 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d6eb219-315b-4f0e-b8cb-e06c4f78d699")
 	)
 	(junction
 		(at 134.62 60.96)
@@ -2895,6 +2797,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cc7994aa-707a-433e-ae28-5cdc145204d1")
+	)
+	(junction
+		(at 72.39 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d5e2330c-8d59-42f8-a033-c500f7aa86d6")
+	)
+	(junction
+		(at 232.41 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d9267d18-fc1c-4617-8df2-e716d8b5258b")
 	)
 	(junction
 		(at 88.9 129.54)
@@ -2928,6 +2842,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 66.04) (xy 114.3 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06d4d181-cb08-4571-a2ab-7b2059ece4c5")
+	)
+	(wire
+		(pts
 			(xy 198.12 54.61) (xy 210.82 54.61)
 		)
 		(stroke
@@ -2938,13 +2862,23 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 127) (xy 91.44 127)
+			(xy 69.85 127) (xy 72.39 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0bc7448d-2825-45eb-8e43-224050027f3d")
+	)
+	(wire
+		(pts
+			(xy 134.62 74.93) (xy 134.62 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e098767-9699-456b-b594-9bcb617c8114")
 	)
 	(wire
 		(pts
@@ -3018,6 +2952,26 @@
 	)
 	(wire
 		(pts
+			(xy 232.41 53.34) (xy 232.41 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2013972a-1135-4651-9dab-501a37637da1")
+	)
+	(wire
+		(pts
+			(xy 232.41 53.34) (xy 242.57 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23a0df18-3718-4f42-9dd8-a0b957e4fc1b")
+	)
+	(wire
+		(pts
 			(xy 198.12 52.07) (xy 198.12 54.61)
 		)
 		(stroke
@@ -3028,7 +2982,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 67.31) (xy 134.62 76.2)
+			(xy 134.62 67.31) (xy 134.62 74.93)
 		)
 		(stroke
 			(width 0)
@@ -3198,6 +3152,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 54.61) (xy 102.87 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "671398a3-0064-494b-a1cc-c9832d217bda")
+	)
+	(wire
+		(pts
 			(xy 78.74 130.81) (xy 78.74 129.54)
 		)
 		(stroke
@@ -3308,6 +3272,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 125.73) (xy 72.39 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ec1fcf4-c772-4a4f-adf4-c27e5f886709")
+	)
+	(wire
+		(pts
 			(xy 35.56 81.28) (xy 43.18 81.28)
 		)
 		(stroke
@@ -3328,7 +3302,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 54.61) (xy 81.28 54.61)
+			(xy 58.42 54.61) (xy 76.2 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3378,16 +3352,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 66.04) (xy 121.92 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9de32a9c-f2c3-4cb3-89f5-19ef34705667")
-	)
-	(wire
-		(pts
 			(xy 125.73 74.93) (xy 125.73 76.2)
 		)
 		(stroke
@@ -3418,6 +3382,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 144.78) (xy 138.43 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5e39d55-5f4d-4e35-8d20-2b09e5d4c5c5")
+	)
+	(wire
+		(pts
 			(xy 68.58 71.12) (xy 68.58 67.31)
 		)
 		(stroke
@@ -3425,6 +3399,16 @@
 			(type default)
 		)
 		(uuid "a6a8b842-4e02-4131-91a1-7abe3621e302")
+	)
+	(wire
+		(pts
+			(xy 242.57 52.07) (xy 242.57 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9d3befa-ee13-4fd4-8fbe-942e889a90fd")
 	)
 	(wire
 		(pts
@@ -3448,7 +3432,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 66.04) (xy 125.73 67.31)
+			(xy 125.73 54.61) (xy 125.73 67.31)
 		)
 		(stroke
 			(width 0)
@@ -3498,7 +3482,17 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 52.07) (xy 232.41 57.15)
+			(xy 138.43 135.89) (xy 138.43 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9939f97-24f6-493f-a853-1d63ad198a5b")
+	)
+	(wire
+		(pts
+			(xy 232.41 52.07) (xy 232.41 53.34)
 		)
 		(stroke
 			(width 0)
@@ -3515,6 +3509,16 @@
 			(type default)
 		)
 		(uuid "bccab88b-54b6-4d52-9fca-745a1f1b97b4")
+	)
+	(wire
+		(pts
+			(xy 140.97 73.66) (xy 140.97 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd7863d5-1d28-4f3b-9f9a-5faef012b040")
 	)
 	(wire
 		(pts
@@ -3558,13 +3562,23 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 140.97) (xy 31.75 142.24)
+			(xy 31.75 138.43) (xy 31.75 139.7)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d7715445-65c8-4186-becb-458ab25a6cd6")
+	)
+	(wire
+		(pts
+			(xy 76.2 54.61) (xy 81.28 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7780671-9608-48d4-a4c2-b32157cc1103")
 	)
 	(wire
 		(pts
@@ -3578,6 +3592,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 74.93) (xy 134.62 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dce21761-65b2-4fa6-af85-e292f325db43")
+	)
+	(wire
+		(pts
 			(xy 78.74 129.54) (xy 88.9 129.54)
 		)
 		(stroke
@@ -3585,6 +3609,26 @@
 			(type default)
 		)
 		(uuid "dfb760d8-a50c-417a-b70b-504161e3e46a")
+	)
+	(wire
+		(pts
+			(xy 138.43 127) (xy 138.43 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6cf4817-5f87-4234-9a0a-fcd35f57e08b")
+	)
+	(wire
+		(pts
+			(xy 125.73 76.2) (xy 114.3 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e77051ee-2766-47c9-8adf-fbfb1f57ac8d")
 	)
 	(wire
 		(pts
@@ -3618,6 +3662,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 127) (xy 91.44 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edc418cf-72f5-4951-9d2b-3fc30425968e")
+	)
+	(wire
+		(pts
 			(xy 31.75 130.81) (xy 31.75 129.54)
 		)
 		(stroke
@@ -3625,6 +3679,16 @@
 			(type default)
 		)
 		(uuid "ef4a6e3b-2b9f-4583-8cb6-c4c29b37d060")
+	)
+	(wire
+		(pts
+			(xy 76.2 53.34) (xy 76.2 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f090372b-34b8-442b-8eec-a1f5947d54da")
 	)
 	(wire
 		(pts
@@ -3645,6 +3709,16 @@
 			(type default)
 		)
 		(uuid "f6964382-66ab-4e61-a5ea-87a599dfaebc")
+	)
+	(wire
+		(pts
+			(xy 114.3 76.2) (xy 114.3 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8ce57b4-a59d-48e2-8615-26d769e648a3")
 	)
 	(wire
 		(pts
@@ -3736,7 +3810,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "003130b5-bce6-4d87-a5df-89b2b05c35d9")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR03"
 			(at 232.41 55.88 0)
 			(effects
 				(font
@@ -3786,7 +3860,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "#PWR016")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -3801,7 +3875,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0137e9bd-a406-46da-948e-396a5f4494c1")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR014"
 			(at 119.38 139.7 0)
 			(effects
 				(font
@@ -3851,7 +3925,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "#PWR027")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -3867,7 +3941,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "02efe28b-de45-4028-b2a7-510a3ddac5ed")
-		(property "Reference" "R6"
+		(property "Reference" "R2"
 			(at 96.52 76.2 90)
 			(effects
 				(font
@@ -3883,7 +3957,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 96.266 73.406 90)
 			(effects
 				(font
@@ -3919,77 +3993,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Battery")
-		(at 31.75 135.89 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "06b6a704-21c6-48de-9e80-e14f14220e7f")
-		(property "Reference" "BT2"
-			(at 35.56 134.0484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "LiPo"
-			(at 35.56 136.5884 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 31.75 134.366 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 31.75 134.366 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Multiple-cell battery"
-			(at 31.75 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "691b4756-80df-4419-92d6-7b9f194ae63f")
-		)
-		(pin "2"
-			(uuid "25e1b6df-b62e-4124-9fff-20a7351c269e")
-		)
-		(instances
-			(project ""
-				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "BT2")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -4004,7 +4008,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "077c69e7-0897-4f6a-9b32-dee6232ad576")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR021"
 			(at 99.06 160.02 0)
 			(effects
 				(font
@@ -4054,7 +4058,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "#PWR033")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -4070,7 +4074,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0c4b23ac-0117-49a3-805e-2e53c3f3a138")
-		(property "Reference" "J3"
+		(property "Reference" "J1"
 			(at 43.18 44.45 0)
 			(effects
 				(font
@@ -4086,7 +4090,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4125-xx-x-0190_6P_TopMnt_Horizontal"
 			(at 46.99 59.69 0)
 			(effects
 				(font
@@ -4137,72 +4141,7 @@
 		(instances
 			(project ""
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 125.73 76.2 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0d4b54a8-c140-464f-ade6-7986cec82bbe")
-		(property "Reference" "#PWR020"
-			(at 125.73 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 125.73 80.264 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 125.73 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 125.73 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 125.73 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f3c5afe9-52de-4f82-9ba8-431f7c482239")
-		)
-		(instances
-			(project "golf-gps"
-				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "#PWR020")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -4236,7 +4175,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 125.73 71.12 0)
 			(effects
 				(font
@@ -4287,7 +4226,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "25c81b29-6637-495f-96c6-24c4ec07d1e9")
-		(property "Reference" "C6"
+		(property "Reference" "C3"
 			(at 121.92 129.5462 0)
 			(effects
 				(font
@@ -4305,7 +4244,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 119.38 130.81 0)
 			(effects
 				(font
@@ -4341,7 +4280,7 @@
 		(instances
 			(project ""
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "C6")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -4356,7 +4295,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3460fc68-16ee-4e64-b254-220bc383a29f")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR05"
 			(at 81.28 82.55 0)
 			(effects
 				(font
@@ -4406,7 +4345,72 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "#PWR018")
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 138.43 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "406e4e36-ce5b-4344-a520-ba6b4e59c747")
+		(property "Reference" "#PWR019"
+			(at 138.43 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 138.43 150.114 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 138.43 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3fecc8f5-49e0-41c6-9b3c-a826e3b1861d")
+		)
+		(instances
+			(project "golf-gps"
+				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -4421,7 +4425,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4142da61-74f9-4425-a8e1-178f85c8a27f")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR02"
 			(at 198.12 55.88 0)
 			(effects
 				(font
@@ -4471,7 +4475,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "#PWR015")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -4486,7 +4490,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "46c3bd4a-154d-4d15-96d7-285d0efc4d79")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR012"
 			(at 31.75 128.27 0)
 			(effects
 				(font
@@ -4536,32 +4540,32 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "#PWR025")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 118.11 66.04 90)
+		(lib_id "power:PWR_FLAG")
+		(at 76.2 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "59ecd861-69e8-4ea7-95fa-31545c0dac12")
-		(property "Reference" "R5"
-			(at 118.11 69.85 90)
+		(uuid "4ac00f93-1937-418b-bfcc-aaddd546d430")
+		(property "Reference" "#FLG02"
+			(at 76.2 51.435 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Value" "330R"
-			(at 118.11 72.39 90)
+		(property "Value" "PWR_FLAG"
+			(at 76.2 49.276 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4569,7 +4573,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.364 65.024 90)
+			(at 76.2 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4578,7 +4582,205 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 118.11 66.04 0)
+			(at 76.2 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 76.2 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "36985b38-56ab-4a2f-bb3d-51e821086a68")
+		)
+		(instances
+			(project "golf-gps"
+				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 140.97 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4c8c77fb-f3ea-4bd5-b6f6-f0fca1e3a554")
+		(property "Reference" "#FLG03"
+			(at 140.97 71.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 140.97 69.596 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 140.97 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.97 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 140.97 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9146ecc6-2292-4a51-99c6-c3d8492e6f1b")
+		)
+		(instances
+			(project "golf-gps"
+				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 72.39 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "58f82b90-daef-4ec9-91f6-8adc35a838d4")
+		(property "Reference" "#FLG04"
+			(at 72.39 123.825 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 72.39 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 72.39 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 72.39 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 72.39 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "edbecb5f-4ab1-4908-a24f-fe02ebea1a5b")
+		)
+		(instances
+			(project "golf-gps"
+				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
+					(reference "#FLG04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 114.3 71.12 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "59ecd861-69e8-4ea7-95fa-31545c0dac12")
+		(property "Reference" "R1"
+			(at 116.84 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "470R"
+			(at 116.84 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 113.284 70.866 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4587,7 +4789,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 118.11 66.04 0)
+			(at 114.3 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4604,7 +4806,7 @@
 		(instances
 			(project ""
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "R5")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -4620,7 +4822,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5aa1c91d-fafe-44ff-833e-30294c8bc2fd")
-		(property "Reference" "R8"
+		(property "Reference" "R4"
 			(at 71.12 73.6599 0)
 			(effects
 				(font
@@ -4638,7 +4840,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 69.596 75.184 90)
 			(effects
 				(font
@@ -4674,7 +4876,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "R8")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -4698,7 +4900,7 @@
 				)
 			)
 		)
-		(property "Value" "BAT54"
+		(property "Value" "BAT54C"
 			(at 215.8365 50.8 0)
 			(effects
 				(font
@@ -4706,7 +4908,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 217.17 57.15 0)
 			(effects
 				(font
@@ -4715,7 +4917,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://diotec.com/request/datasheet/bat54.pdf"
 			(at 217.17 57.15 0)
 			(effects
 				(font
@@ -4760,7 +4962,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "60a941d6-8a9f-4a68-83f0-2f3db968cf92")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR022"
 			(at 105.41 160.02 0)
 			(effects
 				(font
@@ -4810,7 +5012,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "#PWR034")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -4826,7 +5028,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "60fe57a9-fc2e-4c75-8e64-29de4c8db66a")
-		(property "Reference" "U3"
+		(property "Reference" "U2"
 			(at 101.6 119.38 0)
 			(effects
 				(font
@@ -4905,7 +5107,7 @@
 		(instances
 			(project ""
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "U3")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -4920,7 +5122,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6261d93b-b250-42e2-812f-7873c8684ad2")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR013"
 			(at 138.43 129.54 0)
 			(effects
 				(font
@@ -4970,7 +5172,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "#PWR026")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -5056,7 +5258,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "72d73b86-c8da-4f1b-a140-109b47d61852")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR020"
 			(at 92.71 161.29 0)
 			(effects
 				(font
@@ -5106,7 +5308,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "#PWR032")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -5121,7 +5323,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7481d98b-2b8f-496a-a979-147c70ca737b")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR011"
 			(at 68.58 88.9 0)
 			(effects
 				(font
@@ -5171,7 +5373,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "#PWR024")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -5186,7 +5388,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "815562aa-e19b-4b07-9dbf-ea8098a27b53")
-		(property "Reference" "C4"
+		(property "Reference" "C1"
 			(at 83.82 63.5062 0)
 			(effects
 				(font
@@ -5204,7 +5406,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 81.28 64.77 0)
 			(effects
 				(font
@@ -5240,7 +5442,76 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "C4")
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 138.43 140.97 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "847aeed0-5b47-4e3e-8b9b-83b79b062aa2")
+		(property "Reference" "D3"
+			(at 142.24 141.2874 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED_PWR"
+			(at 142.24 143.8274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 138.43 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 138.43 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3bd41e32-ab96-428b-91f7-6383071eeb9d")
+		)
+		(pin "2"
+			(uuid "9f8fac0a-6471-445f-bc93-aa447a50e3b0")
+		)
+		(instances
+			(project "golf-gps"
+				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -5254,10 +5525,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "88373b25-40eb-4d84-8c7c-64b78a08ec75")
-		(property "Reference" "U2"
-			(at 105.0641 53.34 0)
+		(property "Reference" "U1"
+			(at 94.996 50.038 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5266,7 +5536,7 @@
 			)
 		)
 		(property "Value" "MCP73831-2-OT"
-			(at 105.0641 55.88 0)
+			(at 94.996 52.578 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5321,7 +5591,7 @@
 		(instances
 			(project ""
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "U2")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -5406,7 +5676,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9c349e61-4434-40c0-a90b-d9c7de659981")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR015"
 			(at 128.27 139.7 0)
 			(effects
 				(font
@@ -5456,7 +5726,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "#PWR028")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -5471,7 +5741,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a028b4c8-0737-466f-92a5-1743222527e6")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR09"
 			(at 43.18 88.9 0)
 			(effects
 				(font
@@ -5521,7 +5791,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "#PWR022")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -5536,7 +5806,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a2bf4768-9e7e-42d5-8b39-6a4756e19021")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR017"
 			(at 69.85 147.32 0)
 			(effects
 				(font
@@ -5586,7 +5856,7 @@
 		(instances
 			(project ""
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "#PWR030")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -5601,7 +5871,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a57e28a4-5a63-4a08-8021-7081b632fba7")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR06"
 			(at 102.87 82.55 0)
 			(effects
 				(font
@@ -5651,7 +5921,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "#PWR019")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -5667,7 +5937,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af51d070-f318-4bf6-b2de-c6af3cf72a9a")
-		(property "Reference" "R7"
+		(property "Reference" "R3"
 			(at 62.23 73.6599 0)
 			(effects
 				(font
@@ -5685,7 +5955,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 60.706 75.184 90)
 			(effects
 				(font
@@ -5721,7 +5991,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "R7")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -5736,7 +6006,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b9413431-2787-425f-85e1-c8ed89ae9649")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR04"
 			(at 198.12 76.2 0)
 			(effects
 				(font
@@ -5786,7 +6056,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "#PWR017")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -5802,7 +6072,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ba0197ff-a365-4e53-b9e8-30d821731225")
-		(property "Reference" "C9"
+		(property "Reference" "C6"
 			(at 81.28 132.0735 0)
 			(effects
 				(font
@@ -5820,7 +6090,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 78.74 133.35 0)
 			(effects
 				(font
@@ -5856,7 +6126,7 @@
 		(instances
 			(project ""
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "C9")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -5871,7 +6141,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bcfb3caa-fccd-4232-bf47-7c54dac76fd1")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR010"
 			(at 59.69 88.9 0)
 			(effects
 				(font
@@ -5921,7 +6191,76 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "#PWR023")
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 138.43 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bdfadd73-31e5-41c3-9a5e-de0971d259e0")
+		(property "Reference" "R5"
+			(at 140.208 130.302 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "330R"
+			(at 140.208 134.112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 139.446 132.334 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 138.43 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bfd269e8-296e-45fd-a751-3411766ec58c")
+		)
+		(pin "1"
+			(uuid "b2aee32f-eca8-43e9-a887-61b19e070d9f")
+		)
+		(instances
+			(project "golf-gps"
+				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -5936,7 +6275,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c4c5ee91-2074-4b03-803d-9d3948a2d1cf")
-		(property "Reference" "C5"
+		(property "Reference" "C2"
 			(at 137.16 63.5062 0)
 			(effects
 				(font
@@ -5954,7 +6293,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 134.62 64.77 0)
 			(effects
 				(font
@@ -5990,7 +6329,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "C5")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -5998,15 +6337,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 31.75 142.24 0)
+		(at 31.75 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "c513dec9-1dfc-4cfa-92ff-517c52800313")
-		(property "Reference" "#PWR029"
-			(at 31.75 148.59 0)
+		(property "Reference" "#PWR016"
+			(at 31.75 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6015,7 +6354,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 31.75 146.304 0)
+			(at 31.75 143.764 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6023,7 +6362,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 31.75 142.24 0)
+			(at 31.75 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6032,7 +6371,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 31.75 142.24 0)
+			(at 31.75 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6041,7 +6380,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 31.75 142.24 0)
+			(at 31.75 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6055,7 +6394,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "#PWR029")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -6086,7 +6425,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fuse:Fuse_1812_4532Metric"
 			(at 44.45 129.54 0)
 			(effects
 				(font
@@ -6095,7 +6434,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.bourns.com/docs/product-datasheets/mf-msmf.pdf"
 			(at 44.45 129.54 0)
 			(effects
 				(font
@@ -6129,6 +6468,141 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 242.57 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c9798349-c357-47e6-81f6-8f3a4e14f29e")
+		(property "Reference" "#FLG01"
+			(at 242.57 50.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 242.57 48.006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 242.57 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 242.57 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 242.57 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "41ca4dcd-65a9-4f19-ab07-08f2d7d446c1")
+		)
+		(instances
+			(project "golf-gps"
+				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Battery_Cell")
+		(at 31.75 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ce16dc19-c64a-4a61-979d-e34b37160c86")
+		(property "Reference" "BT2"
+			(at 35.56 132.7784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LiPo"
+			(at 35.56 135.3184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
+			(at 31.75 134.366 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 31.75 134.366 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single-cell battery"
+			(at 31.75 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6c54ef40-a395-416c-9b4d-7c3564e0beab")
+		)
+		(pin "2"
+			(uuid "50f5212b-7ed0-4e67-933d-b09f001e21c5")
+		)
+		(instances
+			(project "golf-gps"
+				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
+					(reference "BT2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 78.74 142.24 0)
 		(unit 1)
@@ -6137,7 +6611,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d013b368-2c26-45a2-9389-b76dc0233a84")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR018"
 			(at 78.74 148.59 0)
 			(effects
 				(font
@@ -6187,7 +6661,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "#PWR031")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -6202,7 +6676,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d40138da-36f4-413a-b447-94d84d752644")
-		(property "Reference" "C8"
+		(property "Reference" "C5"
 			(at 72.39 132.0862 0)
 			(effects
 				(font
@@ -6220,7 +6694,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 69.85 133.35 0)
 			(effects
 				(font
@@ -6256,7 +6730,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "C8")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -6271,7 +6745,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d61af6e9-8e01-4169-9165-2d1a031b9401")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR08"
 			(at 134.62 82.55 0)
 			(effects
 				(font
@@ -6321,7 +6795,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "#PWR021")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -6336,7 +6810,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dd0cd479-0d16-44be-b21b-854beaf6d776")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR01"
 			(at 140.97 55.88 0)
 			(effects
 				(font
@@ -6386,7 +6860,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "#PWR014")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -6402,7 +6876,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f1314998-e741-4f3c-9f41-8f802f0c92c2")
-		(property "Reference" "C7"
+		(property "Reference" "C4"
 			(at 130.81 129.5462 0)
 			(effects
 				(font
@@ -6420,7 +6894,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 128.27 130.81 0)
 			(effects
 				(font
@@ -6456,7 +6930,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/85090442-ade3-4199-8614-07d13b35dd1e"
-					(reference "C7")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -6490,7 +6964,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Battery:BatteryHolder_Multicomp_BC-2001_1x2032"
 			(at 198.12 64.516 90)
 			(effects
 				(font
