@@ -23,7 +23,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 97.79) (xy 132.08 97.79)
+			(xy 119.38 90.17) (xy 132.08 90.17)
 		)
 		(stroke
 			(width 0)
@@ -33,7 +33,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 85.09) (xy 132.08 85.09)
+			(xy 119.38 80.01) (xy 132.08 80.01)
 		)
 		(stroke
 			(width 0)
@@ -43,23 +43,13 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 102.87) (xy 132.08 102.87)
+			(xy 74.93 80.01) (xy 90.17 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6fe4df21-1a1f-41c0-8345-4c1a74e1fb8c")
-	)
-	(wire
-		(pts
-			(xy 119.38 90.17) (xy 132.08 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "74011c45-7d21-4c77-8aac-ecd06f428cdb")
+		(uuid "34123ddf-d9ff-45b4-a7e8-a9dd66e1df8d")
 	)
 	(wire
 		(pts
@@ -73,7 +63,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 92.71) (xy 132.08 92.71)
+			(xy 119.38 85.09) (xy 132.08 85.09)
 		)
 		(stroke
 			(width 0)
@@ -93,7 +83,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 80.01) (xy 132.08 80.01)
+			(xy 119.38 74.93) (xy 132.08 74.93)
 		)
 		(stroke
 			(width 0)
@@ -113,7 +103,17 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 82.55) (xy 132.08 82.55)
+			(xy 119.38 100.33) (xy 132.08 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c120b3f9-4daa-40d2-99b5-42867d209073")
+	)
+	(wire
+		(pts
+			(xy 119.38 77.47) (xy 132.08 77.47)
 		)
 		(stroke
 			(width 0)
@@ -123,23 +123,43 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 105.41) (xy 132.08 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee384e11-29a0-409e-9957-ecd38f36287f")
-	)
-	(wire
-		(pts
 			(xy 119.38 95.25) (xy 132.08 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
+		(uuid "d742fb6a-59dc-4a66-ba1b-5e4dded52bd6")
+	)
+	(wire
+		(pts
+			(xy 74.93 77.47) (xy 90.17 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecb8e894-00f6-419e-b7d1-baef8d655c5f")
+	)
+	(wire
+		(pts
+			(xy 119.38 87.63) (xy 132.08 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
 		(uuid "f5d41f02-fc1e-4d04-85b0-82fc3ecc0f37")
+	)
+	(wire
+		(pts
+			(xy 119.38 102.87) (xy 132.08 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5f14f31-e5ea-43a0-be46-952fc5baa3fd")
 	)
 	(text "Golf GPS"
 		(exclude_from_sim no)
@@ -156,8 +176,8 @@
 		(uuid "ecf0bbc4-48fd-4b30-9241-a98f3424e93a")
 	)
 	(sheet
-		(at 90.678 57.15)
-		(size 28.702 51.308)
+		(at 90.17 57.15)
+		(size 29.21 51.308)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -168,7 +188,7 @@
 		)
 		(uuid "33aaa396-8732-453d-8cc2-db0e551e4c59")
 		(property "Sheetname" "Microcontroller"
-			(at 90.678 56.4384 0)
+			(at 90.17 56.4384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -177,43 +197,13 @@
 			)
 		)
 		(property "Sheetfile" "microcontroller.kicad_sch"
-			(at 90.678 109.0426 0)
+			(at 90.17 109.0426 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
-		)
-		(pin "SPI_SCK" output
-			(at 119.38 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "8d82068d-b7d1-4726-b372-e5460da9d2d3")
-		)
-		(pin "SPI_MISO" output
-			(at 119.38 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "3dd7b6cf-c5dc-49db-999e-36e5f6a2f27c")
-		)
-		(pin "SPI_MOSI" output
-			(at 119.38 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "dbd53a42-335d-4262-8a0b-63c7dc9b0487")
 		)
 		(pin "BTN_1" input
 			(at 119.38 64.77 0)
@@ -246,7 +236,7 @@
 			(uuid "cd9982df-b707-42bc-b6f4-6f72d3cff2ca")
 		)
 		(pin "GPS_PPS" input
-			(at 119.38 80.01 0)
+			(at 119.38 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -256,7 +246,7 @@
 			(uuid "960b78f3-0b2a-4777-b18c-93d9866fac2b")
 		)
 		(pin "LCD_DC" output
-			(at 119.38 102.87 0)
+			(at 119.38 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -265,7 +255,7 @@
 			)
 			(uuid "8e6c0772-2fe5-4b82-b406-960abfbe90fb")
 		)
-		(pin "BOOT" input
+		(pin "BOOT0" input
 			(at 119.38 59.69 0)
 			(effects
 				(font
@@ -275,18 +265,8 @@
 			)
 			(uuid "dfd47c7f-050b-40ad-aca8-46e06ebeb2de")
 		)
-		(pin "GPS_TX" output
-			(at 119.38 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "c7169f37-7230-470e-943e-d09734725ead")
-		)
 		(pin "LCD_CS" output
-			(at 119.38 105.41 0)
+			(at 119.38 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -295,7 +275,67 @@
 			)
 			(uuid "2f92f532-ebc2-4166-b06a-bed3b2b3115b")
 		)
+		(pin "USART2_TX" output
+			(at 90.17 80.01 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d3bd8ca1-1ad5-4dac-b4e3-7829af72c5b7")
+		)
+		(pin "USART2_RX" input
+			(at 90.17 77.47 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d594320d-882b-4e35-8a98-e1a760d7045f")
+		)
+		(pin "GPS_RX" output
+			(at 119.38 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "8d7d36c7-95e4-4118-9fa4-0af820b61c39")
+		)
+		(pin "GPS_TX" input
+			(at 119.38 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "27c30043-6697-4240-b4c1-f1feac53321a")
+		)
 		(pin "SD_CS" output
+			(at 119.38 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ead9e4b2-4cd0-4e3b-b0d3-c67c688b910f")
+		)
+		(pin "SPI3_MOSI" output
+			(at 119.38 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "407bc401-3883-4911-af28-e801718628d3")
+		)
+		(pin "SPI3_SCK" output
 			(at 119.38 90.17 0)
 			(effects
 				(font
@@ -303,9 +343,9 @@
 				)
 				(justify right)
 			)
-			(uuid "2b5b904d-1e81-41a3-87c1-ba78c9a3395a")
+			(uuid "0e78a784-e76b-42fe-bd5d-b38643e07ace")
 		)
-		(pin "GPS_RX" output
+		(pin "SPI3_MISO" output
 			(at 119.38 85.09 0)
 			(effects
 				(font
@@ -313,7 +353,7 @@
 				)
 				(justify right)
 			)
-			(uuid "0248e196-76af-4b08-a945-9a18b24c8ab9")
+			(uuid "c85f564c-cb33-46ba-a9e0-4bc1cc791e1c")
 		)
 		(instances
 			(project "golf-gps"
@@ -354,7 +394,7 @@
 			)
 		)
 		(pin "LCD_CS" input
-			(at 132.08 105.41 180)
+			(at 132.08 102.87 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -364,7 +404,7 @@
 			(uuid "19b99ea8-304c-4f43-9b7f-e470c0f61056")
 		)
 		(pin "LCD_DC" input
-			(at 132.08 102.87 180)
+			(at 132.08 100.33 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -373,28 +413,8 @@
 			)
 			(uuid "eb18d717-d8e5-4428-a713-6f5a70508227")
 		)
-		(pin "SPI_MOSI" input
-			(at 132.08 95.25 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "e54a084b-2793-4fed-a21e-b5c2f022576a")
-		)
-		(pin "SPI_SCK" input
-			(at 132.08 97.79 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "3cd2f13b-9d82-4c46-88ba-3143c8dcb35c")
-		)
 		(pin "GPS_PPS" output
-			(at 132.08 80.01 180)
+			(at 132.08 74.93 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -402,46 +422,6 @@
 				(justify left)
 			)
 			(uuid "f839f5b3-1e89-42f0-935c-dbc0ad3a49c2")
-		)
-		(pin "GPS_RX" input
-			(at 132.08 85.09 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "8042a26f-f66a-41de-a875-9b0b0a65b568")
-		)
-		(pin "GPS_TX" input
-			(at 132.08 82.55 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "142ee13d-9268-4d90-9676-0654cc85de43")
-		)
-		(pin "SPI_MISO" input
-			(at 132.08 92.71 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "8f5ef3ec-ee57-4e40-922b-984e804c676f")
-		)
-		(pin "SC_CS" input
-			(at 132.08 90.17 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "b2226f18-5efb-4cc2-a1a7-cc52e3f7f61c")
 		)
 		(pin "BTN_3" output
 			(at 132.08 69.85 180)
@@ -473,7 +453,7 @@
 			)
 			(uuid "1a854bae-3409-4050-a3d6-ccd7a8e63e9b")
 		)
-		(pin "BOOT" output
+		(pin "BOOT0" output
 			(at 132.08 59.69 180)
 			(effects
 				(font
@@ -482,6 +462,66 @@
 				(justify left)
 			)
 			(uuid "2455cebf-60a0-49b0-982f-35bdcf43092b")
+		)
+		(pin "GPS_RX" input
+			(at 132.08 77.47 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d0dae7a4-e7dc-4c75-b8a1-df12edfa0348")
+		)
+		(pin "GPS_TX" output
+			(at 132.08 80.01 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "3ea4c517-daf2-43a7-ab8d-503652336b32")
+		)
+		(pin "SD_CS" input
+			(at 132.08 95.25 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9fa829f9-d1e9-4efb-9be8-56ed5ae82390")
+		)
+		(pin "SPI1_MOSI" input
+			(at 132.08 87.63 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "11696398-f79c-4108-a4b4-1d9098ea7754")
+		)
+		(pin "SPI1_SCK" input
+			(at 132.08 90.17 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "80f33842-ccbe-447b-b575-996956db564b")
+		)
+		(pin "SPI1_MISO" input
+			(at 132.08 85.09 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "6dfd5d50-5254-4087-9224-87aa79867507")
 		)
 		(instances
 			(project "golf-gps"
@@ -493,7 +533,7 @@
 	)
 	(sheet
 		(at 46.99 57.15)
-		(size 27.94 25.4)
+		(size 27.94 43.18)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -513,13 +553,33 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 46.99 82.6266 0)
+			(at 46.99 100.9146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
+		)
+		(pin "USART2_TX" input
+			(at 74.93 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e1dd09c6-67e3-4c4d-ad6f-b9427634ab1a")
+		)
+		(pin "USART2_RX" output
+			(at 74.93 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "5b107464-f0c6-4e46-9e95-92d8a4a323ff")
 		)
 		(instances
 			(project "golf-gps"
