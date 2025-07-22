@@ -13,6 +13,16 @@
 	(lib_symbols)
 	(wire
 		(pts
+			(xy 74.93 80.01) (xy 90.17 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "096317c2-89a1-4216-aaf9-d9108f47adcc")
+	)
+	(wire
+		(pts
 			(xy 119.38 69.85) (xy 132.08 69.85)
 		)
 		(stroke
@@ -43,26 +53,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 80.01) (xy 90.17 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34123ddf-d9ff-45b4-a7e8-a9dd66e1df8d")
-	)
-	(wire
-		(pts
-			(xy 119.38 59.69) (xy 132.08 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7679932f-e62e-4a33-b2e9-037fc4b377e6")
-	)
-	(wire
-		(pts
 			(xy 119.38 85.09) (xy 132.08 85.09)
 		)
 		(stroke
@@ -90,6 +80,16 @@
 			(type default)
 		)
 		(uuid "9497a863-dd1d-419b-ad8c-a2f74248fc78")
+	)
+	(wire
+		(pts
+			(xy 74.93 77.47) (xy 90.17 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "999f55bd-d96c-4625-b69a-b8297e4ca17d")
 	)
 	(wire
 		(pts
@@ -130,16 +130,6 @@
 			(type default)
 		)
 		(uuid "d742fb6a-59dc-4a66-ba1b-5e4dded52bd6")
-	)
-	(wire
-		(pts
-			(xy 74.93 77.47) (xy 90.17 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ecb8e894-00f6-419e-b7d1-baef8d655c5f")
 	)
 	(wire
 		(pts
@@ -255,16 +245,6 @@
 			)
 			(uuid "8e6c0772-2fe5-4b82-b406-960abfbe90fb")
 		)
-		(pin "BOOT0" input
-			(at 119.38 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "dfd47c7f-050b-40ad-aca8-46e06ebeb2de")
-		)
 		(pin "LCD_CS" output
 			(at 119.38 102.87 0)
 			(effects
@@ -274,26 +254,6 @@
 				(justify right)
 			)
 			(uuid "2f92f532-ebc2-4166-b06a-bed3b2b3115b")
-		)
-		(pin "USART2_TX" output
-			(at 90.17 80.01 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "d3bd8ca1-1ad5-4dac-b4e3-7829af72c5b7")
-		)
-		(pin "USART2_RX" input
-			(at 90.17 77.47 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "d594320d-882b-4e35-8a98-e1a760d7045f")
 		)
 		(pin "GPS_RX" output
 			(at 119.38 77.47 0)
@@ -354,6 +314,26 @@
 				(justify right)
 			)
 			(uuid "c85f564c-cb33-46ba-a9e0-4bc1cc791e1c")
+		)
+		(pin "USB_D+" input
+			(at 90.17 80.01 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "fe4bdedb-68e8-4076-9d2d-7bc493e81c31")
+		)
+		(pin "USB_D-" input
+			(at 90.17 77.47 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "be83952f-be8b-4430-b1f7-7ae51e07f274")
 		)
 		(instances
 			(project "golf-gps"
@@ -453,16 +433,6 @@
 			)
 			(uuid "1a854bae-3409-4050-a3d6-ccd7a8e63e9b")
 		)
-		(pin "BOOT0" output
-			(at 132.08 59.69 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "2455cebf-60a0-49b0-982f-35bdcf43092b")
-		)
 		(pin "GPS_RX" input
 			(at 132.08 77.47 180)
 			(effects
@@ -561,17 +531,7 @@
 				(justify left top)
 			)
 		)
-		(pin "USART2_TX" input
-			(at 74.93 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "e1dd09c6-67e3-4c4d-ad6f-b9427634ab1a")
-		)
-		(pin "USART2_RX" output
+		(pin "USB_D-" output
 			(at 74.93 77.47 0)
 			(effects
 				(font
@@ -579,7 +539,17 @@
 				)
 				(justify right)
 			)
-			(uuid "5b107464-f0c6-4e46-9e95-92d8a4a323ff")
+			(uuid "766f68f3-08e7-4d25-aca4-15ff0278045f")
+		)
+		(pin "USB_D+" output
+			(at 74.93 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a90819c0-4683-4c96-92a5-1a958e87aece")
 		)
 		(instances
 			(project "golf-gps"
