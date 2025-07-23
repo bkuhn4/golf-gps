@@ -285,36 +285,6 @@
 			)
 			(uuid "ead9e4b2-4cd0-4e3b-b0d3-c67c688b910f")
 		)
-		(pin "SPI3_MOSI" output
-			(at 119.38 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "407bc401-3883-4911-af28-e801718628d3")
-		)
-		(pin "SPI3_SCK" output
-			(at 119.38 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "0e78a784-e76b-42fe-bd5d-b38643e07ace")
-		)
-		(pin "SPI3_MISO" output
-			(at 119.38 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "c85f564c-cb33-46ba-a9e0-4bc1cc791e1c")
-		)
 		(pin "USB_D+" input
 			(at 90.17 80.01 180)
 			(effects
@@ -334,6 +304,36 @@
 				(justify left)
 			)
 			(uuid "be83952f-be8b-4430-b1f7-7ae51e07f274")
+		)
+		(pin "SPI3_SCK" output
+			(at 119.38 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "7fb76ab7-f82d-46b1-9c01-5f29435b9e8b")
+		)
+		(pin "SPI3_MISO" output
+			(at 119.38 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "31968e8d-5395-4240-9c45-d5c67c706d12")
+		)
+		(pin "SPI3_MOSI" output
+			(at 119.38 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e512fd97-4468-4e5f-9c99-ff43308b5e59")
 		)
 		(instances
 			(project "golf-gps"
@@ -463,17 +463,7 @@
 			)
 			(uuid "9fa829f9-d1e9-4efb-9be8-56ed5ae82390")
 		)
-		(pin "SPI1_MOSI" input
-			(at 132.08 87.63 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "11696398-f79c-4108-a4b4-1d9098ea7754")
-		)
-		(pin "SPI1_SCK" input
+		(pin "SPI3_SCK" input
 			(at 132.08 90.17 180)
 			(effects
 				(font
@@ -481,9 +471,19 @@
 				)
 				(justify left)
 			)
-			(uuid "80f33842-ccbe-447b-b575-996956db564b")
+			(uuid "9b049a42-0fdd-433b-8e59-16839d37dc84")
 		)
-		(pin "SPI1_MISO" input
+		(pin "SPI3_MOSI" input
+			(at 132.08 87.63 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "fd3eacee-193e-4a15-b112-3ccfd35654b7")
+		)
+		(pin "SPI3_MISO" input
 			(at 132.08 85.09 180)
 			(effects
 				(font
@@ -491,7 +491,7 @@
 				)
 				(justify left)
 			)
-			(uuid "6dfd5d50-5254-4087-9224-87aa79867507")
+			(uuid "eea06e78-2f4f-45a4-82d6-308a3b607c40")
 		)
 		(instances
 			(project "golf-gps"
