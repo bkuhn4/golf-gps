@@ -3886,7 +3886,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00ede9e2-4df9-49e1-80d2-e7572b7b388f")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR040"
 			(at 207.01 77.47 0)
 			(effects
 				(font
@@ -3936,7 +3936,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "#PWR029")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -3951,7 +3951,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "08567bb0-b35f-4798-8fc9-a278c925827b")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR031"
 			(at 109.22 91.44 0)
 			(effects
 				(font
@@ -4002,7 +4002,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "#PWR033")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -4018,7 +4018,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0a25febb-8853-4fec-9a7c-23c521aa9c55")
-		(property "Reference" "R7"
+		(property "Reference" "R9"
 			(at 209.55 87.6299 0)
 			(effects
 				(font
@@ -4072,7 +4072,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "R7")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -4088,7 +4088,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a7b9af5-a833-4fb1-bea4-4efe0e2b10b2")
-		(property "Reference" "C16"
+		(property "Reference" "C9"
 			(at 62.2236 96.52 90)
 			(effects
 				(font
@@ -4140,7 +4140,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "C16")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -4155,7 +4155,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "31250120-3011-45f0-928e-b6c1d2f7ac2e")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR030"
 			(at 107.95 143.51 0)
 			(effects
 				(font
@@ -4206,7 +4206,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "#PWR041")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -4221,7 +4221,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4f7399cb-7b78-4413-b467-6399f467df14")
-		(property "Reference" "R9"
+		(property "Reference" "R6"
 			(at 109.728 121.412 0)
 			(effects
 				(font
@@ -4275,7 +4275,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "R9")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -4358,7 +4358,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5580f442-0285-4424-af03-22280c761dbc")
-		(property "Reference" "C18"
+		(property "Reference" "C12"
 			(at 97.79 106.6862 0)
 			(effects
 				(font
@@ -4412,7 +4412,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "C18")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -4427,7 +4427,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "589c4faa-5f9a-45c0-88d8-77e98d4fe4e9")
-		(property "Reference" "C10"
+		(property "Reference" "C13"
 			(at 107.696 68.072 0)
 			(effects
 				(font
@@ -4481,7 +4481,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "C10")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -4496,7 +4496,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5ae2dda6-f232-4597-a5d3-2a03e687896d")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR026"
 			(at 52.07 91.44 0)
 			(effects
 				(font
@@ -4546,7 +4546,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "#PWR034")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -4561,7 +4561,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5be2f9a1-3da3-4350-9bb2-8605df38108e")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR034"
 			(at 142.24 67.31 0)
 			(effects
 				(font
@@ -4611,7 +4611,7 @@
 		(instances
 			(project ""
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "#PWR028")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -4627,7 +4627,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "645bd72e-9bb6-46fa-a858-67c569e77e45")
-		(property "Reference" "R8"
+		(property "Reference" "R5"
 			(at 76.2 92.7099 0)
 			(effects
 				(font
@@ -4681,7 +4681,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "R8")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -4696,7 +4696,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "684e9b86-cfa5-44d4-be67-0bdb2d5b9bf0")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR032"
 			(at 137.16 64.77 0)
 			(effects
 				(font
@@ -4746,7 +4746,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "#PWR026")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -4761,7 +4761,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6973ae02-c9fd-4482-84c3-ea075933b1fa")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR029"
 			(at 99.06 82.55 0)
 			(effects
 				(font
@@ -4812,7 +4812,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "#PWR032")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -4827,7 +4827,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7023e33c-3fee-4b05-9e5d-331e153a7e10")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR028"
 			(at 93.98 119.38 0)
 			(effects
 				(font
@@ -4878,7 +4878,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "#PWR038")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -4894,7 +4894,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "771e58f2-3949-42b9-97db-62a8599ce58e")
-		(property "Reference" "C17"
+		(property "Reference" "C10"
 			(at 85.09 106.6862 0)
 			(effects
 				(font
@@ -4948,7 +4948,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "C17")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -4963,7 +4963,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7bdda506-17d2-4017-83eb-e1ea382d3bcd")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR027"
 			(at 73.66 105.41 0)
 			(effects
 				(font
@@ -5014,7 +5014,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "#PWR036")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -5106,7 +5106,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "90a2218b-bf96-48dd-9ede-cc07467c117e")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR033"
 			(at 139.7 137.16 0)
 			(effects
 				(font
@@ -5157,7 +5157,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "#PWR040")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -5172,7 +5172,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "95cd345c-590a-4f5f-80b9-7f59fee3c26d")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR035"
 			(at 156.21 81.28 0)
 			(effects
 				(font
@@ -5223,7 +5223,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "#PWR030")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -5238,7 +5238,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9f922f4a-5ebc-4dab-8033-57c7a85f8f9f")
-		(property "Reference" "C14"
+		(property "Reference" "C18"
 			(at 173.736 68.072 0)
 			(effects
 				(font
@@ -5292,7 +5292,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "C14")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -5307,7 +5307,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "aa05c3ba-3481-402b-a90d-cbbca63cf83f")
-		(property "Reference" "C12"
+		(property "Reference" "C16"
 			(at 149.606 68.072 0)
 			(effects
 				(font
@@ -5361,7 +5361,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "C12")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -5376,7 +5376,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "aaab0874-42c5-4b84-be4c-886854972d96")
-		(property "Reference" "C13"
+		(property "Reference" "C17"
 			(at 157.226 68.072 0)
 			(effects
 				(font
@@ -5430,7 +5430,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "C13")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -5463,7 +5463,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 107.95 132.08 0)
 			(effects
 				(font
@@ -5580,7 +5580,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b5e6e882-e56b-4093-90ae-2227602d6911")
-		(property "Reference" "C9"
+		(property "Reference" "C11"
 			(at 100.076 68.072 0)
 			(effects
 				(font
@@ -5634,7 +5634,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "C9")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -5718,7 +5718,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ca020bf5-f0cc-48aa-883e-16c3ed10723d")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR036"
 			(at 172.72 64.77 0)
 			(effects
 				(font
@@ -5768,7 +5768,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "#PWR027")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -5783,7 +5783,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d6e198e3-83c9-4063-b88d-632ebbb0f450")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR037"
 			(at 172.72 81.28 0)
 			(effects
 				(font
@@ -5834,7 +5834,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "#PWR031")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -5849,7 +5849,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e05d6061-63a4-4a5c-a570-e4269e5df47a")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR038"
 			(at 184.15 114.3 0)
 			(effects
 				(font
@@ -5899,7 +5899,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "#PWR037")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -5914,7 +5914,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e0631527-8c47-4f2f-9024-60b0c3f23e03")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR041"
 			(at 207.01 100.33 0)
 			(effects
 				(font
@@ -5965,7 +5965,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "#PWR035")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -6348,7 +6348,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f1789f72-90f3-4f1d-8776-cd398c94c582")
-		(property "Reference" "C11"
+		(property "Reference" "C14"
 			(at 115.316 68.072 0)
 			(effects
 				(font
@@ -6402,7 +6402,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "C11")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -6418,7 +6418,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9f16c2d-b13a-4804-8fcd-1a7c7f3471a1")
-		(property "Reference" "R5"
+		(property "Reference" "R7"
 			(at 124.46 68.5799 0)
 			(effects
 				(font
@@ -6472,7 +6472,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "R5")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -6488,7 +6488,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ffb6de25-6793-4b23-b972-fa3aec40f0e6")
-		(property "Reference" "R6"
+		(property "Reference" "R8"
 			(at 209.55 77.4699 0)
 			(effects
 				(font
@@ -6542,7 +6542,7 @@
 		(instances
 			(project "golf-gps"
 				(path "/af7c48c8-d9c3-4e82-ac7d-cbe8954aa654/33aaa396-8732-453d-8cc2-db0e551e4c59"
-					(reference "R6")
+					(reference "R8")
 					(unit 1)
 				)
 			)
