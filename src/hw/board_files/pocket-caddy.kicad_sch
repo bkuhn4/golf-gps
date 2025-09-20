@@ -1,0 +1,106 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "2c77a8ba-b277-4959-adec-d3fc778c7960")
+	(paper "A4")
+	(title_block
+		(title "Pocket Caddy")
+		(date "2025-09-19")
+		(rev "0")
+		(company "EE 333 - Electronic Systems Design")
+		(comment 1 "B. Kuhn")
+		(comment 2 "B. York")
+	)
+	(lib_symbols)
+	(sheet
+		(at 115.57 57.658)
+		(size 38.1 49.022)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "074c1045-79e0-43c6-be3e-f281747a43d1")
+		(property "Sheetname" "Microcontroller"
+			(at 115.57 56.9464 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "microcontroller.kicad_sch"
+			(at 115.57 107.2646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "pocket-caddy"
+				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 54.864 57.658)
+		(size 45.974 47.752)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7763c5b3-a08f-479a-9f6f-ea394e6f7159")
+		(property "Sheetname" "USB-C and Power"
+			(at 54.864 56.9464 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 54.864 105.9946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "pocket-caddy"
+				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

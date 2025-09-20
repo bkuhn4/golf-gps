@@ -1,4 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "Golf_GPS")(type "KiCad")(uri "${KIPRJMOD}/Golf_GPS.kicad_sym")(options "")(descr ""))
-)
