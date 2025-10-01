@@ -4532,12 +4532,6 @@
 		(uuid "27ab26bc-2430-426c-be8a-240ad499904c")
 	)
 	(junction
-		(at 113.03 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "298d5324-a2a9-4e85-a611-7bf94b9f4fd3")
-	)
-	(junction
 		(at 182.88 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4632,12 +4626,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c191c94d-9877-47ad-8941-59bb478df945")
-	)
-	(junction
-		(at 113.03 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c674a2a4-2e24-40e2-b6ee-bfd98b9e8ec9")
 	)
 	(junction
 		(at 109.22 67.31)
@@ -4796,16 +4784,6 @@
 			(type default)
 		)
 		(uuid "115e8b01-3637-409e-a148-da1ed034fa3e")
-	)
-	(wire
-		(pts
-			(xy 113.03 67.31) (xy 134.62 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1717425a-925d-4ced-aef3-fe16f8bdfc3d")
 	)
 	(wire
 		(pts
@@ -5749,16 +5727,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 62.23) (xy 132.08 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d185ca1a-ca6f-42bc-8428-3fd902a2063b")
-	)
-	(wire
-		(pts
 			(xy 39.37 138.43) (xy 39.37 143.51)
 		)
 		(stroke
@@ -5869,7 +5837,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 62.23) (xy 113.03 62.23)
+			(xy 106.68 62.23) (xy 132.08 62.23)
 		)
 		(stroke
 			(width 0)
@@ -6029,7 +5997,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 67.31) (xy 113.03 67.31)
+			(xy 109.22 67.31) (xy 134.62 67.31)
 		)
 		(stroke
 			(width 0)
@@ -6681,71 +6649,6 @@
 			(project "pocket-caddy"
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 207.01 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "315f7817-f2a8-4cfa-bb45-00b3dd1932d7")
-		(property "Reference" "#PWR024"
-			(at 207.01 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "V_USB"
-			(at 207.01 46.736 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 207.01 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 207.01 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 207.01 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "34852c6c-0cb7-4a5d-8a05-a7d9f955d8d7")
-		)
-		(instances
-			(project "pocket-caddy"
-				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -7632,72 +7535,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 113.03 62.23 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "53508ee5-1cd6-47d7-ae31-31fd456f75d4")
-		(property "Reference" "TP14"
-			(at 115.57 61.214 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "D+TP"
-			(at 115.57 63.246 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 107.95 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 107.95 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 113.03 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "127f3f71-0621-4250-b2a3-a7f3de01960e")
-		)
-		(instances
-			(project ""
-				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "TP14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 55.88 78.74 180)
 		(unit 1)
@@ -8436,72 +8273,6 @@
 			(project "pocket-caddy"
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
 					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 113.03 67.31 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "76276b80-e65c-45d4-b1ff-e3b578bd1f2d")
-		(property "Reference" "TP15"
-			(at 114.3 66.548 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "D-TP"
-			(at 114.3 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 107.95 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 107.95 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 113.03 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "127f3f71-0621-4250-b2a3-a7f3de01960f")
-		)
-		(instances
-			(project ""
-				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "TP15")
 					(unit 1)
 				)
 			)
