@@ -5,8 +5,8 @@
 	(uuid "3ae7323d-d5b4-4c51-a47f-558d2e3eef64")
 	(paper "USLetter")
 	(title_block
-		(title "Pocket Caddy")
-		(date "2025-09-25")
+		(title "Pocket Caddy - Golf GPS")
+		(date "2025-10-03")
 		(rev "0")
 		(company "EE 333 - Electronic Systems Design")
 		(comment 1 "B. Kuhn")
@@ -4643,16 +4643,16 @@
 		(uuid "355b5b0d-9ea6-4d23-a6c7-5e849b71faa6")
 	)
 	(junction
+		(at 165.1 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "38f3b431-49bc-423e-816e-766886f2fb99")
+	)
+	(junction
 		(at 250.19 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3aaa8faa-dde5-44c9-8902-27257b295235")
-	)
-	(junction
-		(at 21.59 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3c44c372-ae0f-4717-ba8c-5c8d669752b9")
 	)
 	(junction
 		(at 26.67 143.51)
@@ -4685,6 +4685,12 @@
 		(uuid "56debb3f-6d58-4045-88e5-d9cda7bd140d")
 	)
 	(junction
+		(at 165.1 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "74c6db84-2362-4144-be53-e9dc43ba5875")
+	)
+	(junction
 		(at 96.52 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4707,12 +4713,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a141e7cf-260f-4a28-a639-8386b1973472")
-	)
-	(junction
-		(at 166.37 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a2deef1c-282d-4e32-bc7c-cfd4e07e9c2f")
 	)
 	(junction
 		(at 146.05 128.27)
@@ -4739,12 +4739,6 @@
 		(uuid "b9bae6a5-4ab2-471e-ac8c-98a40882f173")
 	)
 	(junction
-		(at 166.37 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bc497c9a-8880-4427-890c-e72841bd1f34")
-	)
-	(junction
 		(at 218.44 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4761,6 +4755,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c723793f-5d29-4c35-9874-c62798fa0ab7")
+	)
+	(junction
+		(at 165.1 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cb1561c2-7b65-418e-a1cf-df3259b4753e")
 	)
 	(junction
 		(at 109.22 67.31)
@@ -4822,12 +4822,6 @@
 		(color 0 0 0 0)
 		(uuid "fceb1d52-4ca0-4d53-a4bf-1549607d40c0")
 	)
-	(junction
-		(at 229.87 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fd640a9e-013a-4604-a040-362604c300f2")
-	)
 	(no_connect
 		(at 165.1 67.31)
 		(uuid "570c6365-2c24-43c1-924e-6e5294c3975a")
@@ -4876,7 +4870,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 138.43) (xy 167.64 138.43)
+			(xy 151.13 138.43) (xy 167.64 138.43)
 		)
 		(stroke
 			(width 0)
@@ -5006,7 +5000,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 130.81) (xy 166.37 130.81)
+			(xy 167.64 130.81) (xy 165.1 130.81)
 		)
 		(stroke
 			(width 0)
@@ -5093,16 +5087,6 @@
 			(type default)
 		)
 		(uuid "2f798401-93c1-4278-898b-67ccefe2e261")
-	)
-	(wire
-		(pts
-			(xy 229.87 125.73) (xy 237.49 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2fa7ff12-232e-40c0-b81a-64a886996d79")
 	)
 	(wire
 		(pts
@@ -5213,16 +5197,6 @@
 			(type default)
 		)
 		(uuid "3c943328-cf0d-4ae1-b32b-dfd6bf52c4f9")
-	)
-	(wire
-		(pts
-			(xy 16.51 88.9) (xy 21.59 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3cb10ccf-3eed-4d94-895c-0605902ed778")
 	)
 	(wire
 		(pts
@@ -5436,7 +5410,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 130.81) (xy 166.37 118.11)
+			(xy 165.1 130.81) (xy 165.1 118.11)
 		)
 		(stroke
 			(width 0)
@@ -5493,6 +5467,16 @@
 			(type default)
 		)
 		(uuid "5951c273-ec17-447a-835c-16d500b17c47")
+	)
+	(wire
+		(pts
+			(xy 165.1 109.22) (xy 185.42 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59763eb7-e2c3-4f58-b8bc-18268629e808")
 	)
 	(wire
 		(pts
@@ -5573,6 +5557,16 @@
 			(type default)
 		)
 		(uuid "66cd3d9e-9fac-461f-99ef-5b2f1dd9553d")
+	)
+	(wire
+		(pts
+			(xy 165.1 130.81) (xy 165.1 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "683395dd-870a-455a-890d-4920d219b72c")
 	)
 	(wire
 		(pts
@@ -5676,23 +5670,13 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 109.22) (xy 166.37 109.22)
+			(xy 146.05 109.22) (xy 165.1 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "7492cc8c-3fdd-4b12-af33-0b22703b42cf")
-	)
-	(wire
-		(pts
-			(xy 163.83 148.59) (xy 167.64 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75a25280-7372-4f1f-be6b-cb03fecec386")
 	)
 	(wire
 		(pts
@@ -5826,17 +5810,17 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 118.11) (xy 166.37 118.11)
+			(xy 167.64 148.59) (xy 165.1 148.59)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8fba2cbd-29c0-4e54-b30b-72d799acecfd")
+		(uuid "8ef8edef-666e-444c-a71e-ab5a46b172f0")
 	)
 	(wire
 		(pts
-			(xy 166.37 109.22) (xy 166.37 118.11)
+			(xy 165.1 109.22) (xy 165.1 118.11)
 		)
 		(stroke
 			(width 0)
@@ -5916,7 +5900,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 125.73) (xy 229.87 125.73)
+			(xy 204.47 125.73) (xy 237.49 125.73)
 		)
 		(stroke
 			(width 0)
@@ -5983,16 +5967,6 @@
 			(type default)
 		)
 		(uuid "9fb830df-f4e8-4600-b3eb-cf75044732d4")
-	)
-	(wire
-		(pts
-			(xy 166.37 109.22) (xy 185.42 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1c1b7d2-7844-4a2e-ab09-ed68e6bca9c0")
 	)
 	(wire
 		(pts
@@ -6236,6 +6210,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 118.11) (xy 167.64 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c828ed58-c01a-4cfc-9efd-98fe7eabf649")
+	)
+	(wire
+		(pts
 			(xy 146.05 143.51) (xy 146.05 133.35)
 		)
 		(stroke
@@ -6283,16 +6267,6 @@
 			(type default)
 		)
 		(uuid "d1b1730a-f5ee-4838-b1ec-df83884c3ec7")
-	)
-	(wire
-		(pts
-			(xy 121.92 140.97) (xy 128.27 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d1fda66d-77fc-4cba-a341-e7d32eecb296")
 	)
 	(wire
 		(pts
@@ -6615,7 +6589,7 @@
 		(uuid "06f90fb3-53dd-4360-bfd3-03435794a961")
 	)
 	(label "NTC_THERM"
-		(at 154.94 138.43 0)
+		(at 151.13 138.43 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6667,73 +6641,6 @@
 			(justify left)
 		)
 		(uuid "acab50fc-ec71-4f8b-a949-5f8333617179")
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 16.51 88.9 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "052eab6c-5484-412f-a2e7-9a1d7ebc2743")
-		(property "Reference" "TP10"
-			(at 19.05 90.9319 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "GND_TP"
-			(at 19.05 93.4719 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 11.43 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 11.43 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 16.51 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "62ddce48-4507-428b-a3bf-2af60cdef71a")
-		)
-		(instances
-			(project ""
-				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "TP10")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -7292,7 +7199,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0504_1310Metric_Pad0.83x1.28mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 146.05 113.03 0)
 			(effects
 				(font
@@ -7435,7 +7342,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0504_1310Metric_Pad0.83x1.28mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 102.87 144.78 0)
 			(effects
 				(font
@@ -7614,73 +7521,6 @@
 			(project "pocket-caddy"
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 229.87 125.73 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "36552e58-5b21-45d0-9089-ce766607b515")
-		(property "Reference" "TP11"
-			(at 232.41 121.1579 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "VBat_TP"
-			(at 232.41 123.6979 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 234.95 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 234.95 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 229.87 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "62ddce48-4507-428b-a3bf-2af60cdef71b")
-		)
-		(instances
-			(project "pocket-caddy"
-				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "TP11")
 					(unit 1)
 				)
 			)
@@ -7955,7 +7795,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 220.98 138.43 0)
 			(effects
 				(font
@@ -8252,7 +8092,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 220.98 148.59 0)
 			(effects
 				(font
@@ -8387,7 +8227,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0504_1310Metric_Pad0.83x1.28mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 123.19 52.07 0)
 			(effects
 				(font
@@ -8806,7 +8646,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 220.98 158.75 0)
 			(effects
 				(font
@@ -8843,73 +8683,6 @@
 			(project "pocket-caddy"
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
 					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 128.27 140.97 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5f358019-4008-44a0-bc75-3219ac1043dc")
-		(property "Reference" "TP12"
-			(at 130.81 136.3979 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3V3_TP"
-			(at 130.81 138.9379 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 133.35 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 133.35 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 128.27 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "62ddce48-4507-428b-a3bf-2af60cdef71d")
-		)
-		(instances
-			(project ""
-				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "TP12")
 					(unit 1)
 				)
 			)
@@ -9403,7 +9176,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 121.92 154.94 0)
 			(effects
 				(font
@@ -10305,7 +10078,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0504_1310Metric_Pad0.83x1.28mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 237.49 130.81 0)
 			(effects
 				(font
@@ -10407,72 +10180,6 @@
 			(project "pocket-caddy"
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
 					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 163.83 148.59 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9cd1f5e3-dc6d-4f98-afe2-aa9a5267081e")
-		(property "Reference" "#PWR024"
-			(at 167.64 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "V_USB"
-			(at 160.02 148.5899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 163.83 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 163.83 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 163.83 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "de17e7c6-3608-4446-9f3a-e675399d5904")
-		)
-		(instances
-			(project "pocket-caddy"
-				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -10847,7 +10554,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
 			(at 21.59 143.51 0)
 			(effects
 				(font
@@ -10983,7 +10690,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0504_1310Metric_Pad0.83x1.28mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 218.44 115.57 0)
 			(effects
 				(font
@@ -11118,7 +10825,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0504_1310Metric_Pad0.83x1.28mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 62.23 147.32 0)
 			(effects
 				(font
@@ -11693,7 +11400,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0504_1310Metric_Pad0.83x1.28mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 53.34 147.32 0)
 			(effects
 				(font
@@ -12026,7 +11733,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0504_1310Metric_Pad0.83x1.28mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 111.76 144.78 0)
 			(effects
 				(font
