@@ -3556,6 +3556,12 @@
 		(uuid "e338c5a6-93a8-4a27-8dbc-0147c86c0947")
 	)
 	(junction
+		(at 80.01 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ef0334e5-283b-4070-80d0-c94d7d26b56f")
+	)
+	(junction
 		(at 229.87 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4017,7 +4023,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 109.22) (xy 80.01 110.49)
+			(xy 80.01 109.22) (xy 80.01 114.3)
 		)
 		(stroke
 			(width 0)
@@ -4214,6 +4220,16 @@
 			(type default)
 		)
 		(uuid "87c91676-42b9-4ff4-913e-ca1fc023e420")
+	)
+	(wire
+		(pts
+			(xy 80.01 114.3) (xy 87.63 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88a4c35a-8ba0-4742-900a-1cf6c85c4cf5")
 	)
 	(wire
 		(pts
@@ -4637,6 +4653,16 @@
 	)
 	(wire
 		(pts
+			(xy 80.01 114.3) (xy 80.01 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4abe31e-cecf-481d-b945-abe5a6f7374e")
+	)
+	(wire
+		(pts
 			(xy 25.4 166.37) (xy 25.4 165.1)
 		)
 		(stroke
@@ -4961,7 +4987,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:CUI_MSD-1-A"
 			(at 289.56 111.76 0)
 			(effects
 				(font
@@ -5720,6 +5746,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 87.63 114.3 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "275140c3-8492-46de-9a8b-856c16f4dcf9")
+		(property "Reference" "TP10"
+			(at 90.17 116.3319 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "GND"
+			(at 90.17 118.8719 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.54mm_Drill1.5mm_Beaded"
+			(at 82.55 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 87.63 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "af488b27-9dd6-4879-997a-1f01cf5a307d")
+		)
+		(instances
+			(project "pocket-caddy"
+				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/81382524-b053-4c3c-9e13-c8b314c52639"
+					(reference "TP10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 25.4 172.72 0)
 		(unit 1)
@@ -6116,7 +6209,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 80.01 110.49 0)
+		(at 80.01 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6124,7 +6217,7 @@
 		(dnp no)
 		(uuid "51d7bf3a-c3d9-4564-9e2c-97237833e5c2")
 		(property "Reference" "#PWR055"
-			(at 80.01 116.84 0)
+			(at 80.01 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6133,7 +6226,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 80.01 114.554 0)
+			(at 80.01 119.634 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6141,7 +6234,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 110.49 0)
+			(at 80.01 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6150,7 +6243,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 110.49 0)
+			(at 80.01 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6159,7 +6252,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 80.01 110.49 0)
+			(at 80.01 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7378,7 +7471,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.54mm_Drill1.5mm_Beaded"
 			(at 215.9 58.42 0)
 			(effects
 				(font
@@ -7509,7 +7602,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:SOT91P240X110-3N_DMG2305UX-7"
 			(at 38.1 53.34 0)
 			(effects
 				(font
