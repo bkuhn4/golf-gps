@@ -1,0 +1,347 @@
+(footprint "Antenna_Taoglas_SGGP.25.4.A.02_25x25mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -13.7 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "4f68c953-092d-4b32-8019-1583a3ba18ac")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Antenna_Taoglas_SGGP.25.4.A.02_25x25mm"
+		(at 0 13.55 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "0a0a1e9b-52aa-4cff-af6d-8904d761397b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://cdn.taoglas.com/datasheets/SGGP.25.4.A.02.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "599db41d-f89d-401a-a9a6-13477f9235aa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "RF ANTENNA GLONASS, GPS Ceramic Patch Solder Surface Mount"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4177bd2b-e48a-4adc-a959-29872faa7680")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -1.1 11.2)
+		(end 1.1 13.9)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "f9b2e38a-2447-438a-8c42-951e7507957b")
+	)
+	(fp_line
+		(start -12.875 -12.875)
+		(end 12.875 -12.875)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "37b2368f-c897-4ea7-9495-81bb0a59b272")
+	)
+	(fp_line
+		(start -12.875 12.875)
+		(end -12.875 -12.875)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a9844359-448d-4c79-a887-56c4f36ce591")
+	)
+	(fp_line
+		(start -12.875 12.875)
+		(end -2.075 12.875)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "20ee9217-e443-4776-bfc7-aa8bae191977")
+	)
+	(fp_line
+		(start 2.075 12.875)
+		(end 12.875 12.875)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5303902d-ae55-45ff-aa5a-e25865e3f8f9")
+	)
+	(fp_line
+		(start 12.875 12.875)
+		(end 12.875 -12.875)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "847bbef9-a101-4856-9e3b-8954f5a50017")
+	)
+	(fp_rect
+		(start -11.625 -11.625)
+		(end -6.375 -6.375)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "6c162700-f534-4bfd-bd16-94cd63ce53ad")
+	)
+	(fp_rect
+		(start -11.625 -2.625)
+		(end -6.375 2.625)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "e1c3cfd7-1aaf-4083-a7f5-8914adef8dbc")
+	)
+	(fp_rect
+		(start -11.625 6.375)
+		(end -6.375 11.625)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "4524034e-3842-463b-9ed4-53242c40babe")
+	)
+	(fp_rect
+		(start -2.625 -11.625)
+		(end 2.625 -6.375)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "ac80d55d-833d-4c15-9cd6-3e9f5b9bd7ae")
+	)
+	(fp_rect
+		(start -2.625 -2.625)
+		(end 2.625 2.625)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "92bc8cc5-4427-4c81-83f4-c80e7a2e1926")
+	)
+	(fp_rect
+		(start -0.75 11.6125)
+		(end 0.75 13.4875)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "6c9ce0aa-baaa-4df2-93ff-c078b900bb4e")
+	)
+	(fp_rect
+		(start 6.375 -11.625)
+		(end 11.625 -6.375)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "bcf1a214-f79b-4005-bad6-f02e94d32021")
+	)
+	(fp_rect
+		(start 6.375 -2.625)
+		(end 11.625 2.625)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "c9b6abca-8cf0-436b-9d88-92440f577e80")
+	)
+	(fp_rect
+		(start 6.375 6.375)
+		(end 11.625 11.625)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "b96e3b48-6012-4fbe-84c2-ead3c65be884")
+	)
+	(fp_rect
+		(start -25 -25)
+		(end 25 25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "7e8a6756-dc0a-4d53-af5e-4dd8b0794459")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 15.05 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b97126e7-bcfe-4ca0-ba75-f28206aa853a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 12.55)
+		(size 2 2.5)
+		(layers "F.Cu" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "718ae61e-252c-4019-8085-9039262fe603")
+	)
+	(pad "MP" smd rect
+		(at -9 -9)
+		(size 7.2 7.2)
+		(layers "F.Cu" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "652f3201-6f34-4588-b486-e09a09946f6c")
+	)
+	(pad "MP" smd rect
+		(at -9 0)
+		(size 7.2 7.2)
+		(layers "F.Cu" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "87ae0142-3bad-4b54-b3a2-799d15186b27")
+	)
+	(pad "MP" smd rect
+		(at -9 9)
+		(size 7.2 7.2)
+		(layers "F.Cu" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "d407921d-e0f5-432d-a6c2-0270e23228c9")
+	)
+	(pad "MP" smd rect
+		(at 0 -9)
+		(size 7.2 7.2)
+		(layers "F.Cu" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "eb8ed2c2-75a8-42f9-88c8-c6dc5a6f37df")
+	)
+	(pad "MP" smd rect
+		(at 0 0)
+		(size 7.2 7.2)
+		(layers "F.Cu" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "0402511f-94d5-4b74-a293-7411cabe3770")
+	)
+	(pad "MP" smd rect
+		(at 9 -9)
+		(size 7.2 7.2)
+		(layers "F.Cu" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "203614c5-6f5a-4fc5-920c-a1f1e44f0e9d")
+	)
+	(pad "MP" smd rect
+		(at 9 0)
+		(size 7.2 7.2)
+		(layers "F.Cu" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "2d2d8f8c-c050-4ca9-b466-55d6a6b795e9")
+	)
+	(pad "MP" smd rect
+		(at 9 9)
+		(size 7.2 7.2)
+		(layers "F.Cu" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "dac71a11-c092-46b3-a0d8-3a81913ca242")
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Cu")
+		(uuid "4044b8e5-55d3-41ce-ab52-e9ae395ef3dc")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks allowed)
+			(vias allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy -2 10.8) (xy 2 10.8) (xy 2 14.3) (xy -2 14.3)
+			)
+		)
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3d_models/SGGP.12.4.A.02_Web.STEP"
+		(offset
+			(xyz 0 0 8)
+		)
+		(scale
+			(xyz 2.1 2.1 2.1)
+		)
+		(rotate
+			(xyz 90 -180 90)
+		)
+	)
+)

@@ -485,7 +485,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Antenna"
+		(symbol "Device:Antenna_Chip"
 			(pin_numbers
 				(hide yes)
 			)
@@ -497,7 +497,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "AE"
-				(at -1.905 1.905 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -505,8 +505,8 @@
 					(justify right)
 				)
 			)
-			(property "Value" "Antenna"
-				(at -1.905 0 0)
+			(property "Value" "Antenna_Chip"
+				(at 0 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -515,7 +515,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 0)
+				(at -2.54 4.445 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -524,7 +524,7 @@
 				)
 			)
 			(property "Datasheet" "~"
-				(at 0 0 0)
+				(at -2.54 4.445 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -532,7 +532,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Antenna"
+			(property "Description" "Ceramic chip antenna with pin for PCB trace"
 				(at 0 0 0)
 				(effects
 					(font
@@ -550,10 +550,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "Antenna_0_1"
+			(symbol "Antenna_Chip_0_1"
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0 -3.81)
+						(xy -2.54 0) (xy -2.54 -0.635)
 					)
 					(stroke
 						(width 0.254)
@@ -565,7 +565,91 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 2.54) (xy 0 -2.54) (xy -1.27 2.54)
+						(xy -2.54 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27) (xy -1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 1.27) (xy 0.635 1.27) (xy 0.635 -1.27) (xy -0.635 -1.27) (xy -0.635 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 6.985) (xy 2.54 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -0.635) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 6.985) (xy 2.54 1.905) (xy 1.27 6.985)
 					)
 					(stroke
 						(width 0.254)
@@ -576,11 +660,11 @@
 					)
 				)
 			)
-			(symbol "Antenna_1_1"
+			(symbol "Antenna_Chip_1_1"
 				(pin input line
-					(at 0 -5.08 90)
+					(at -2.54 -2.54 90)
 					(length 2.54)
-					(name "A"
+					(name "FEED"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -588,6 +672,24 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 90)
+					(length 2.54)
+					(name "PCB_Trace"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4071,6 +4173,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 83.82) (xy 138.43 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "128680d1-d0d5-475f-8c65-660e32f63e94")
+	)
+	(wire
+		(pts
 			(xy 52.07 55.88) (xy 52.07 57.15)
 		)
 		(stroke
@@ -6448,6 +6560,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Antenna_Chip")
+		(at 135.89 81.28 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2fab1fdb-8d8b-4a89-a477-172cc982345b")
+		(property "Reference" "AE1"
+			(at 139.7 77.4699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SGGP.25.4.A.02"
+			(at 139.7 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Project_Library:Antenna_Taoglas_SGGP.25.4.A.02_25x25mm"
+			(at 138.43 76.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.taoglas.com/datasheets/SGGP.25.4.A.02.pdf"
+			(at 138.43 76.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ceramic chip antenna with pin for PCB trace"
+			(at 135.89 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cbd340da-5133-49af-96d3-575538f69d01")
+		)
+		(pin "2"
+			(uuid "cab1c05d-a0d4-4f7f-b63c-0ebc3c0ef3d5")
+		)
+		(instances
+			(project ""
+				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/81382524-b053-4c3c-9e13-c8b314c52639"
+					(reference "AE1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 25.4 172.72 0)
 		(unit 1)
@@ -7220,6 +7403,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 138.43 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5e00f401-677a-4a23-bf95-0f3a8eb0573c")
+		(property "Reference" "#PWR080"
+			(at 138.43 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 138.43 89.154 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 138.43 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bf69c5e9-f8e8-4032-8d04-e1201d13a5c5")
+		)
+		(instances
+			(project "pocket-caddy"
+				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/81382524-b053-4c3c-9e13-c8b314c52639"
+					(reference "#PWR080")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Schottky_Dual_CommonCathode_AAK_Parallel")
 		(at 213.36 58.42 0)
 		(unit 1)
@@ -7907,73 +8155,6 @@
 			(project ""
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/81382524-b053-4c3c-9e13-c8b314c52639"
 					(reference "U8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Antenna")
-		(at 133.35 78.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "80b1a09c-228a-44ed-84fd-33463bed1c69")
-		(property "Reference" "AE1"
-			(at 135.89 78.1049 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SGGP.25.4.A.02"
-			(at 135.89 80.6449 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 133.35 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn.taoglas.com/datasheets/SGGP.25.4.A.02.pdf"
-			(at 133.35 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Antenna"
-			(at 133.35 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3c22cbf9-da6c-4611-a039-372653afe0ac")
-		)
-		(instances
-			(project ""
-				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/81382524-b053-4c3c-9e13-c8b314c52639"
-					(reference "AE1")
 					(unit 1)
 				)
 			)
