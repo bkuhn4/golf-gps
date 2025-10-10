@@ -4535,7 +4535,7 @@
 	)
 	(text "USB-C Receptacle"
 		(exclude_from_sim no)
-		(at 39.37 37.084 0)
+		(at 40.386 34.036 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -4545,7 +4545,7 @@
 		)
 		(uuid "557fb27a-a9bb-42b1-ae00-c94af9a523c3")
 	)
-	(text "Li-Ion Battery Charger"
+	(text "LiPo Battery Charger"
 		(exclude_from_sim no)
 		(at 204.724 102.362 0)
 		(effects
@@ -4559,13 +4559,27 @@
 	)
 	(text "USB to UART Bridge"
 		(exclude_from_sim no)
-		(at 156.972 37.084 0)
+		(at 155.702 34.036 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
 			)
 		)
 		(uuid "e4d0a5c6-b0af-43b7-97ed-f4bc889fad2e")
+	)
+	(text "LiPo Battery"
+		(exclude_from_sim no)
+		(at 240.284 34.544 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "e6188660-3850-447f-b04e-f4c07df5c6ea")
 	)
 	(text "USB-C & Power"
 		(exclude_from_sim no)
@@ -4582,7 +4596,7 @@
 		(uuid "ebb87959-fcc7-40b5-80c1-439e962acb32")
 	)
 	(junction
-		(at 219.71 35.56)
+		(at 224.79 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "068683ef-db4b-4fc3-b075-ef735e11cc79")
@@ -4690,7 +4704,7 @@
 		(uuid "8cd52a99-c53f-4105-9651-e489c5b17cc8")
 	)
 	(junction
-		(at 219.71 25.4)
+		(at 224.79 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "95d9cc86-a3e8-40d0-a2ea-8d98ce507728")
@@ -5073,7 +5087,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 34.29) (xy 219.71 35.56)
+			(xy 224.79 60.96) (xy 224.79 62.23)
 		)
 		(stroke
 			(width 0)
@@ -5253,7 +5267,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 25.4) (xy 219.71 26.67)
+			(xy 224.79 52.07) (xy 224.79 53.34)
 		)
 		(stroke
 			(width 0)
@@ -5493,7 +5507,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 30.48) (xy 232.41 46.99)
+			(xy 237.49 57.15) (xy 237.49 73.66)
 		)
 		(stroke
 			(width 0)
@@ -5503,7 +5517,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 27.94) (xy 229.87 27.94)
+			(xy 237.49 54.61) (xy 234.95 54.61)
 		)
 		(stroke
 			(width 0)
@@ -5523,7 +5537,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 46.99) (xy 232.41 46.99)
+			(xy 224.79 73.66) (xy 237.49 73.66)
 		)
 		(stroke
 			(width 0)
@@ -5743,7 +5757,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 35.56) (xy 219.71 36.83)
+			(xy 224.79 62.23) (xy 224.79 63.5)
 		)
 		(stroke
 			(width 0)
@@ -5963,7 +5977,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 27.94) (xy 229.87 35.56)
+			(xy 234.95 54.61) (xy 234.95 62.23)
 		)
 		(stroke
 			(width 0)
@@ -6273,7 +6287,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 24.13) (xy 219.71 25.4)
+			(xy 224.79 50.8) (xy 224.79 52.07)
 		)
 		(stroke
 			(width 0)
@@ -6403,7 +6417,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 35.56) (xy 219.71 35.56)
+			(xy 234.95 62.23) (xy 224.79 62.23)
 		)
 		(stroke
 			(width 0)
@@ -6593,7 +6607,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 25.4) (xy 232.41 25.4)
+			(xy 224.79 52.07) (xy 237.49 52.07)
 		)
 		(stroke
 			(width 0)
@@ -6672,7 +6686,7 @@
 		(uuid "ff2ead17-097e-4aed-bd44-c9dd53a68a1d")
 	)
 	(label "NTC_THERM"
-		(at 219.71 46.99 0)
+		(at 224.79 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8677,7 +8691,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 219.71 36.83 0)
+		(at 224.79 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8685,7 +8699,7 @@
 		(dnp no)
 		(uuid "60dca1f2-e117-4b7f-b04b-b208118c0a2e")
 		(property "Reference" "#PWR018"
-			(at 219.71 43.18 0)
+			(at 224.79 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8694,7 +8708,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 219.71 40.894 0)
+			(at 224.79 67.564 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8702,7 +8716,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 219.71 36.83 0)
+			(at 224.79 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8711,7 +8725,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 219.71 36.83 0)
+			(at 224.79 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8720,7 +8734,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 219.71 36.83 0)
+			(at 224.79 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9073,7 +9087,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x03")
-		(at 237.49 27.94 0)
+		(at 242.57 54.61 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9082,7 +9096,7 @@
 		(dnp no)
 		(uuid "7579d55d-1fe4-4ca5-acf8-776837dbe12e")
 		(property "Reference" "J2"
-			(at 240.03 29.2101 0)
+			(at 245.11 55.8801 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9091,7 +9105,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x03"
-			(at 240.03 26.6701 0)
+			(at 245.11 53.3401 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9100,7 +9114,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-3-2.54_1x03_P2.54mm_Horizontal"
-			(at 237.49 27.94 0)
+			(at 242.57 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9109,7 +9123,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 237.49 27.94 0)
+			(at 242.57 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9118,7 +9132,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 237.49 27.94 0)
+			(at 242.57 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9751,7 +9765,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 219.71 24.13 0)
+		(at 224.79 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9759,7 +9773,7 @@
 		(dnp no)
 		(uuid "88f4df61-1285-4409-b73f-d3fa709f9603")
 		(property "Reference" "#PWR081"
-			(at 219.71 27.94 0)
+			(at 224.79 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9768,7 +9782,7 @@
 			)
 		)
 		(property "Value" "VBAT"
-			(at 219.71 20.066 0)
+			(at 224.79 46.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9776,7 +9790,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 219.71 24.13 0)
+			(at 224.79 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9785,7 +9799,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 219.71 24.13 0)
+			(at 224.79 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9794,7 +9808,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 219.71 24.13 0)
+			(at 224.79 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11193,7 +11207,7 @@
 	)
 	(symbol
 		(lib_id "Device:Battery_Cell")
-		(at 219.71 31.75 0)
+		(at 224.79 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11202,7 +11216,7 @@
 		(fields_autoplaced yes)
 		(uuid "ce16dc19-c64a-4a61-979d-e34b37160c86")
 		(property "Reference" "BT1"
-			(at 215.9 28.6384 0)
+			(at 220.98 55.3084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11211,7 +11225,7 @@
 			)
 		)
 		(property "Value" "LiPo"
-			(at 215.9 31.1784 0)
+			(at 220.98 57.8484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11220,7 +11234,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
-			(at 219.71 30.226 90)
+			(at 224.79 56.896 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11229,7 +11243,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.adafruit.com/product/328"
-			(at 219.71 30.226 90)
+			(at 224.79 56.896 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11238,7 +11252,7 @@
 			)
 		)
 		(property "Description" "Single-cell battery"
-			(at 219.71 31.75 0)
+			(at 224.79 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
