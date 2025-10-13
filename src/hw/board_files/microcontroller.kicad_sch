@@ -4763,7 +4763,7 @@
 				)
 			)
 		)
-		(property "Value" "TBD"
+		(property "Value" "18p"
 			(at 73.6536 100.33 90)
 			(effects
 				(font
@@ -5855,7 +5855,7 @@
 				)
 			)
 		)
-		(property "Value" "TBD"
+		(property "Value" "18p"
 			(at 73.6536 82.55 90)
 			(effects
 				(font
