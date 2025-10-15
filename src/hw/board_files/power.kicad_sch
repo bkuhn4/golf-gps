@@ -6906,7 +6906,7 @@
 		(at 92.71 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -6929,7 +6929,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D2.54mm_Drill1.5mm_Beaded"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 97.79 49.53 0)
 			(effects
 				(font
@@ -9721,7 +9721,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Coilcraft_LPS3010"
+		(property "Footprint" "Project_Library:TDK_VLS3012_3.0x3.0mm"
 			(at 81.28 167.64 0)
 			(effects
 				(font
