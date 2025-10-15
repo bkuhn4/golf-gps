@@ -6867,7 +6867,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
 			(at 233.68 73.66 0)
 			(effects
 				(font
@@ -8571,7 +8571,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:SOT91P240X110-3N_DMG2305UX-7"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
 			(at 38.1 53.34 0)
 			(effects
 				(font

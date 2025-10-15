@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.25
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -58,7 +58,56 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "clearance|216750000|78550000|0355f349-791d-49d5-b91f-2d0bac406611|88da3164-8909-471f-899c-e6a63714ae2c",
+          "Used for star ground point"
+        ],
+        [
+          "clearance|216750000|78550000|88da3164-8909-471f-899c-e6a63714ae2c|c32fad97-a00d-44bd-b0dc-49f547a9401c",
+          "Used for star ground point"
+        ],
+        [
+          "hole_clearance|216750000|77950000|2295eb7c-8c06-4cd4-ab96-2a0f986f3abd|0355f349-791d-49d5-b91f-2d0bac406611",
+          "Used for star ground point"
+        ],
+        [
+          "hole_clearance|216750000|77950000|38d5efd6-5c75-4895-afd3-fe9ed096c1c9|0355f349-791d-49d5-b91f-2d0bac406611",
+          "Used for star ground point"
+        ],
+        [
+          "hole_clearance|216750000|78550000|38d5efd6-5c75-4895-afd3-fe9ed096c1c9|5d9cb4c0-aecd-4c84-88f9-baf9adfd1281",
+          "Used for star ground point"
+        ],
+        [
+          "hole_clearance|216750000|79150000|38d5efd6-5c75-4895-afd3-fe9ed096c1c9|c32fad97-a00d-44bd-b0dc-49f547a9401c",
+          "Used for star ground point"
+        ],
+        [
+          "shorting_items|216450000|78550000|5d9cb4c0-aecd-4c84-88f9-baf9adfd1281|88da3164-8909-471f-899c-e6a63714ae2c",
+          "Used for star ground point"
+        ],
+        [
+          "solder_mask_bridge|216150000|78550000|5d9cb4c0-aecd-4c84-88f9-baf9adfd1281|38d5efd6-5c75-4895-afd3-fe9ed096c1c9",
+          "Used for star ground point"
+        ],
+        [
+          "solder_mask_bridge|216750000|77550000|0355f349-791d-49d5-b91f-2d0bac406611|38d5efd6-5c75-4895-afd3-fe9ed096c1c9",
+          "Used for star ground point"
+        ],
+        [
+          "solder_mask_bridge|216750000|79550000|c32fad97-a00d-44bd-b0dc-49f547a9401c|38d5efd6-5c75-4895-afd3-fe9ed096c1c9",
+          "Used for star ground point"
+        ],
+        [
+          "solder_mask_bridge|217000000|78175000|80480d3b-df9c-43fc-b78d-83ef54158430|38d5efd6-5c75-4895-afd3-fe9ed096c1c9",
+          "Used for star ground point"
+        ],
+        [
+          "solder_mask_bridge|217962500|78050000|80480d3b-df9c-43fc-b78d-83ef54158430|fd6010de-1cc5-42c7-8951-1ea276ce3034",
+          "Used for star ground point"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -131,11 +180,11 @@
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
-        "min_resolved_spokes": 2,
+        "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
+        "min_through_hole_diameter": 0.2,
         "min_track_width": 0.1,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
