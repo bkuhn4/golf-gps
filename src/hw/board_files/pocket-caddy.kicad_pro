@@ -64,10 +64,6 @@
           "Used for star ground point"
         ],
         [
-          "clearance|216750000|78550000|88da3164-8909-471f-899c-e6a63714ae2c|c32fad97-a00d-44bd-b0dc-49f547a9401c",
-          "Used for star ground point"
-        ],
-        [
           "hole_clearance|216750000|77950000|2295eb7c-8c06-4cd4-ab96-2a0f986f3abd|0355f349-791d-49d5-b91f-2d0bac406611",
           "Used for star ground point"
         ],
@@ -84,8 +80,40 @@
           "Used for star ground point"
         ],
         [
-          "shorting_items|216450000|78550000|5d9cb4c0-aecd-4c84-88f9-baf9adfd1281|88da3164-8909-471f-899c-e6a63714ae2c",
-          "Used for star ground point"
+          "lib_footprint_mismatch|200992500|109750000|d0256de8-8d92-47e7-97dc-3b4d58ba55f6|00000000-0000-0000-0000-000000000000",
+          "Extended pads for hand soldering"
+        ],
+        [
+          "lib_footprint_mismatch|214512500|84900000|ee907f9d-b7ed-4dee-b234-cf2e1b65bd5c|00000000-0000-0000-0000-000000000000",
+          "Adjusted to fit physical EG1218 switch"
+        ],
+        [
+          "lib_footprint_mismatch|217500000|78050000|4c985ad7-9f66-4ccc-9230-c0b02a86defe|00000000-0000-0000-0000-000000000000",
+          "Adjust size"
+        ],
+        [
+          "silk_overlap|0|0|754cc7fb-743c-4e3e-a839-7d62cf25563c|da1d130d-eb53-49ef-88b7-45cb6a63ef8a",
+          ""
+        ],
+        [
+          "silk_overlap|167096983|80200000|4da8d255-2425-4457-9a0c-cb672408c32b|86636f9a-aa5b-488f-b8c0-ac00ed6f08dd",
+          ""
+        ],
+        [
+          "silk_overlap|193455793|67875000|0ed450a0-0335-405c-bb60-e14d754d78fb|9ebfa04e-2ec4-46cf-bfe9-0517dcb178f7",
+          ""
+        ],
+        [
+          "silk_overlap|197875000|67872524|0ed450a0-0335-405c-bb60-e14d754d78fb|bf4bfb27-1d97-4d4d-ba9c-0687f088f7f3",
+          ""
+        ],
+        [
+          "silk_overlap|201130455|83843481|258c35fe-aaec-4394-bacf-16421b23788f|9f14d16d-02ce-4e46-8cd7-72e1a0b6510e",
+          ""
+        ],
+        [
+          "silk_overlap|227201948|93983566|41bd66af-9983-4bbe-ba54-de266aa73a79|da1d130d-eb53-49ef-88b7-45cb6a63ef8a",
+          ""
         ],
         [
           "solder_mask_bridge|216150000|78550000|5d9cb4c0-aecd-4c84-88f9-baf9adfd1281|38d5efd6-5c75-4895-afd3-fe9ed096c1c9",
