@@ -24,6 +24,7 @@
 // I2C Bus Pins (for OLED, Fuel Gauge, Temp/Hum Sensor, and GPS Module)
 #define SCL_PIN         4   // I2C Clock
 #define SDA_PIN         10  // I2C Data
+#define OLED_WAIT_TIME 1000;
 
 // GPS Module Control Pins (Power and Reset)
 #define GPS_EN_N_PIN    3
@@ -46,8 +47,25 @@ SFE_UBLOX_GNSS    myGNSS;
 SFE_BQ27441       lipo;
 Adafruit_SHT31    sht30 = Adafruit_SHT31();
 
+
 // --- FUNCTION PROTOTYPES ---
-void scanI2CBus();
+void scanI2CBus() {
+  Serial.println("2. Scanning I2C bus...");
+  byte count = 0;
+  for (byte address = 1; address < 127; address++) {
+    Wire.beginTransmission(address);
+    if (Wire.endTransmission() == 0) {
+      Serial.print(" - Device found at 0x");
+      Serial.println(address, HEX);
+      count++;
+    }
+  }
+  if (count == 0) {
+    Serial.println("No I2C devices found.");
+  } else {
+    Serial.printf("%d devices found.\n", count);
+  }
+}
 
 // --- SETUP FUNCTION ---
 void setup() {
@@ -61,6 +79,7 @@ void setup() {
   pinMode(BTN_2_PIN, INPUT_PULLUP);
   pinMode(BTN_3_PIN, INPUT_PULLUP);
   Serial.println("Button pins initialized.");
+  
 
   // Initialize GPS Control Pins
   pinMode(GPS_EN_N_PIN, OUTPUT);
@@ -94,7 +113,7 @@ void setup() {
   display.setCursor(0, 0);
   display.println("HW TEST: OLED OK");
   display.display();
-  delay(1000);
+  delay(OLED_WAIT_TIME);
 
   // 2. I2C Bus Scan
   scanI2CBus();
@@ -111,7 +130,7 @@ void setup() {
     display.println("OK");
   }
   display.display();
-  delay(1000);
+  delay(OLED_WAIT_TIME);
 
   // 4. BQ27441 LiPo Fuel Gauge Test
   Serial.print("4. Testing BQ27441 Fuel Gauge... ");
@@ -124,7 +143,7 @@ void setup() {
     display.println("OK");
   }
   display.display();
-  delay(1000);
+  delay(OLED_WAIT_TIME);
 
   // 5. u-blox GPS Module Test
   Serial.print("5. Testing u-blox GPS... ");
@@ -137,7 +156,7 @@ void setup() {
     display.println("OK");
   }
   display.display();
-  delay(1000);
+  delay(OLED_WAIT_TIME);
 
   // 6. SD Card Test
   Serial.print("6. Testing SD Card... ");
@@ -164,14 +183,14 @@ void setup() {
     }
   }
   display.display();
-  delay(2000);
+  delay(OLED_WAIT_TIME);
 
   Serial.println("\n--- Initial tests complete. Entering live loop. ---");
   display.clearDisplay();
   display.println("Tests Complete!");
   display.println("Entering Live Mode");
   display.display();
-  delay(2000);
+  delay(OLED_WAIT_TIME);
 }
 
 // --- MAIN LOOP ---
