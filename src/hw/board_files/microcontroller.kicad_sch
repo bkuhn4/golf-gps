@@ -1698,6 +1698,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "u-blox GPS module has internal pullups. \nExternal pullups can cause various data glitches.\n(see SparkFun u-blox GNSS Library Github)\n"
+		(exclude_from_sim no)
+		(at 173.228 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "06e2afec-1189-4742-8882-bd564056e1a1")
+	)
 	(text "Microcontroller"
 		(exclude_from_sim no)
 		(at 14.478 15.748 0)
@@ -3653,7 +3664,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "33e20b57-cb0f-4d13-a93a-2dff3e0d01cf")
 		(property "Reference" "R13"
@@ -3923,7 +3934,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "5c67b5b3-9d41-4a78-9138-b4a7b93d9a77")
 		(property "Reference" "R12"

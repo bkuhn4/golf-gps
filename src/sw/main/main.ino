@@ -1,8 +1,8 @@
 /******************************************************************************
  * PROJECT:     Pocket Caddy - Golf GPS
- * FILE:        PocketCaddy_GolfGPS.ino
+ * FILE:        main.ino
  * AUTHOR:      Brady Kuhn, Bryan York
- * DATE:        10/15/2025
+ * DATE:        10/17/2025
  * VERSION:     0
  *
  * REQUIRED LIBRARIES:
@@ -18,6 +18,14 @@
  * TODO: 
  *
  ******************************************************************************/
+
+#include <Arduino.h>
+#include <Wire.h>                                  // I2C
+#include <SPI.h>                                   // SPI
+#include <SD.h>
+#include <SparkFun_u-blox_GNSS_Arduino_Library.h>  // GPS module
+#include <SparkFunBQ27441.h>                       // LiPo fuel gauge
+#include "Adafruit_SHT31.h"                        // SHT31 temperature and humidity sensor
 
 // --- PIN DEFINITIONS ---
 
@@ -61,9 +69,8 @@ void setup() {
   digitalWrite(SD_CS_PIN, HIGH); // Default state: SD card not selected
   Serial.println("SD Card CS pin initialized.");
 
-  // Note: The I2C pins (SDA, SCL) and SPI pins (MOSI, MISO, SCK)
-  // are configured by their respective library `begin()` calls (e.g., Wire.begin()).
-  // No explicit pinMode() is needed for them here.
+  Wire.begin(SDA_PIN, SCL_PIN);
+  Wire.setClock(100000);  // 100kHz recommended by u-blox library
 
   Serial.println("\n--- Pin initialization complete. ---");
 }
