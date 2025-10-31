@@ -2,12 +2,27 @@
    PROJECT:     Pocket Caddy Hardware Test
    FILE:        hw_test.ino
    AUTHOR:      Brady Kuhn, Bryan York
-   DATE:        10/17/2025
+   DATE:        10/31/2025
    VERSION:     0
 
    TODO:
 
  ******************************************************************************/
+/* --- Tools Setup ---
+  Install ESP32 Core: Tools > Board > Board Manager > "esp32"
+  Board: esp32 > ESP32C3 Dev Module
+  USB CDC On Boot: "Enabled"
+  JTAG Adapter: "Disabled"
+
+  For first-time programming:
+    1. Plug in USB-C cable
+    2. Hold RESET button
+    3. Hold BOOT button
+    4. Release RESET button
+    5. Release BOOT button
+    6. Select Port (COM#)
+    7. Sketch > Upload
+*/
 
 #include <Arduino.h>
 #include <Wire.h>                                  // I2C
@@ -24,7 +39,7 @@
 // I2C Bus Pins (for OLED, Fuel Gauge, Temp/Hum Sensor, and GPS Module)
 #define SCL_PIN 4            // I2C Clock
 #define SDA_PIN 10           // I2C Data
-#define OLED_WAIT_TIME 1000  //Amount of time to wait after displaying info to OLED Screen
+#define OLED_WAIT_TIME 1000  // Amount of time to wait after displaying info to OLED Screen
 
 // GPS Module Control Pins (Power and Reset)
 #define GPS_EN_N_PIN 3
@@ -81,7 +96,7 @@ void setup() {
   Wire.begin(SDA_PIN, SCL_PIN);
   Wire.setClock(100000);             // 100kHz recommended by u-blox library
   Wire.setWireTimeout(25000, true);  // 25ms timeout, auto-reset on hang
-  Serial.println("I2C bus initialized at 100kHz.");
+  Serial.println("I2C bus initialized.");
 
   // --- SEQUENTIAL HARDWARE TESTS ---
 
@@ -97,7 +112,7 @@ void setup() {
   display.setTextSize(1);
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(0, 0);
-  display.println("HW TEST: OLED OK");
+  display.println("OLED OK");
   display.display();
   delay(OLED_WAIT_TIME);
 
