@@ -30,6 +30,7 @@
 #include <SD.h>                                    // SD Card
 #include <Adafruit_GFX.h>                          // OLED Graphics
 #include <Adafruit_SSD1306.h>                      // OLED Driver
+#include "U8glib.h"                                // OLED Graphics
 #include <SparkFun_u-blox_GNSS_Arduino_Library.h>  // GPS module
 #include <SparkFunBQ27441.h>                       // LiPo fuel gauge
 #include "Adafruit_SHT31.h"                        // Temp/humidity sensor
