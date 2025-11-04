@@ -3,10 +3,7 @@
  *
  * Description: This is the recommended way to display a bitmap on an ESP32.
  *              It uses the U8g2 library, which is the successor to U8glib.
- *
- * Pins Used:
- * - SDA: 22
- * - SCL: 23
+
  */
 
 // Core Arduino and the modern U8g2 library
@@ -89,16 +86,21 @@ const unsigned char epd_bitmap_Track_Shot_logo [] PROGMEM = {
 const unsigned char epd_bitmap_Up_arrow [] PROGMEM = {
 	0x00, 0x00, 0x80, 0x01, 0xe0, 0x07, 0xf8, 0x1f, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 };
+// 'hierarchy_marker', 8x8px
+const unsigned char epd_bitmap_hierarchy_marker [] PROGMEM = {
+  0x0f, 0x0f, 0x00, 0x00, 0x80, 0x00, 0x02, 0x80
+};
 
 // Array of all bitmaps for convenience
-const int epd_bitmap_allArray_LEN = 6;
-const unsigned char* epd_bitmap_allArray[6] = {
+const int epd_bitmap_allArray_LEN = 7;
+const unsigned char* epd_bitmap_allArray[7] = {
 	epd_bitmap_item_outline,
   epd_bitmap_Down_arrow,
 	epd_bitmap_Track_Shot_logo,
 	epd_bitmap_Up_arrow,
 	epd_bitmap_scroll_bar,
 	epd_bitmap_scroll_bar_knob
+  epd_bitmap_hierarchy_marker
 };
 
 // Variable to store the Y position of the scrollbar knob
