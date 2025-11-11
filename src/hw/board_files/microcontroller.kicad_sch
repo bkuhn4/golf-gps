@@ -1723,6 +1723,17 @@
 		)
 		(uuid "1db2a1b8-bc91-4ae2-8925-26804c30de25")
 	)
+	(text "TODO:\n- Change strapping pins to button inputs"
+		(exclude_from_sim no)
+		(at 190.754 22.606 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "667ccdf6-51b2-4847-a163-9246b7fdea06")
+	)
 	(junction
 		(at 120.65 53.34)
 		(diameter 0)
@@ -1793,7 +1804,7 @@
 		(at 120.65 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8e84c210-1f4c-4658-80eb-6c0d9e3a3d33")
+		(uuid "92e77b91-bb6f-4c07-9c59-88a98e26b6d0")
 	)
 	(junction
 		(at 48.26 85.09)
@@ -1885,7 +1896,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 53.34) (xy 120.65 66.04)
+			(xy 120.65 53.34) (xy 120.65 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1905,7 +1916,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 74.93) (xy 120.65 81.28)
+			(xy 120.65 62.23) (xy 120.65 66.04)
 		)
 		(stroke
 			(width 0)
@@ -2025,16 +2036,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 66.04) (xy 120.65 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21ef9b8c-2980-47b9-a956-f019f99d1808")
-	)
-	(wire
-		(pts
 			(xy 246.38 90.17) (xy 255.27 90.17)
 		)
 		(stroke
@@ -2142,6 +2143,16 @@
 			(type default)
 		)
 		(uuid "4186c62d-e964-4b58-baad-dadc4cf9a78f")
+	)
+	(wire
+		(pts
+			(xy 115.57 66.04) (xy 120.65 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "437816b0-0b03-45d0-825b-09f3ad8db670")
 	)
 	(wire
 		(pts
@@ -2412,6 +2423,16 @@
 			(type default)
 		)
 		(uuid "7e87e664-2a95-47a2-ad14-5f265b2a8ca7")
+	)
+	(wire
+		(pts
+			(xy 120.65 66.04) (xy 120.65 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "822c5ba4-e118-40aa-b193-940216113df6")
 	)
 	(wire
 		(pts
@@ -2722,16 +2743,6 @@
 			(type default)
 		)
 		(uuid "c2aeb844-9024-4042-aa29-6ed52305a566")
-	)
-	(wire
-		(pts
-			(xy 115.57 66.04) (xy 120.65 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4154c5e-9d44-4b7f-9cea-35440658b495")
 	)
 	(wire
 		(pts
@@ -3326,7 +3337,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 120.65 71.12 0)
+		(at 120.65 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3335,7 +3346,7 @@
 		(fields_autoplaced yes)
 		(uuid "1eecfe6b-c2e5-43be-8c33-9ed98da77cee")
 		(property "Reference" "R11"
-			(at 123.19 69.8499 0)
+			(at 123.19 57.1499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3344,7 +3355,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 123.19 72.3899 0)
+			(at 123.19 59.6899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3353,7 +3364,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 121.666 71.374 90)
+			(at 121.666 58.674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3362,7 +3373,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 120.65 71.12 0)
+			(at 120.65 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3371,7 +3382,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 120.65 71.12 0)
+			(at 120.65 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
