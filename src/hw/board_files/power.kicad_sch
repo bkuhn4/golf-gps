@@ -5303,7 +5303,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "094cc8fe-c067-4944-b285-a441cab769b4")
-		(property "Reference" "R2"
+		(property "Reference" "R3"
 			(at 159.512 60.96 90)
 			(effects
 				(font
@@ -5355,7 +5355,7 @@
 		(instances
 			(project "pocket-caddy"
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "R2")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -5370,7 +5370,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0ed5c7ad-b287-4930-ab99-b0620b7b8181")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR015"
 			(at 22.86 125.73 0)
 			(effects
 				(font
@@ -5420,7 +5420,7 @@
 		(instances
 			(project "pocket-caddy"
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "#PWR018")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -5502,7 +5502,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1ce5ec55-0e63-477b-bb99-26ec8b911817")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR013"
 			(at 91.44 96.52 0)
 			(effects
 				(font
@@ -5552,7 +5552,7 @@
 		(instances
 			(project "pocket-caddy"
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "#PWR014")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -5632,7 +5632,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1fb11ffc-c995-4c1d-a327-2c15d4884983")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR014"
 			(at 194.31 97.79 0)
 			(effects
 				(font
@@ -5682,7 +5682,7 @@
 		(instances
 			(project "pocket-caddy"
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "#PWR013")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -6055,7 +6055,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3c215827-9681-44f5-8a6a-7017c71f2e8b")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR02"
 			(at 154.94 45.72 0)
 			(effects
 				(font
@@ -6105,7 +6105,7 @@
 		(instances
 			(project "pocket-caddy"
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "#PWR01")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -6273,7 +6273,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "476da9df-5bee-4d10-a3ef-794b2eb61d98")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR019"
 			(at 50.8 148.59 0)
 			(effects
 				(font
@@ -6323,7 +6323,7 @@
 		(instances
 			(project ""
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "#PWR022")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -6406,7 +6406,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4a4ef7b2-032a-4c9a-98f3-967572c53842")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR024"
 			(at 74.93 173.99 0)
 			(effects
 				(font
@@ -6456,7 +6456,7 @@
 		(instances
 			(project "pocket-caddy"
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "#PWR027")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -6472,7 +6472,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "56db5dd6-5576-48df-8e7b-03e6de8b51c4")
-		(property "Reference" "R7"
+		(property "Reference" "R6"
 			(at 72.39 71.1199 0)
 			(effects
 				(font
@@ -6535,7 +6535,7 @@
 		(instances
 			(project "pocket-caddy"
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "R7")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -6551,7 +6551,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "57cf2149-82d1-4281-9e9b-32a598f9e567")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR025"
 			(at 87.63 172.72 0)
 			(effects
 				(font
@@ -6601,7 +6601,7 @@
 		(instances
 			(project "pocket-caddy"
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "#PWR028")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -6814,7 +6814,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6261d93b-b250-42e2-812f-7873c8684ad2")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR016"
 			(at 119.38 127 0)
 			(effects
 				(font
@@ -6864,7 +6864,7 @@
 		(instances
 			(project "pocket-caddy"
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "#PWR019")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -7015,7 +7015,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "74480784-3cdf-484c-b7f9-7c1955a5bfc2")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR03"
 			(at 227.33 46.99 0)
 			(effects
 				(font
@@ -7065,7 +7065,7 @@
 		(instances
 			(project "pocket-caddy"
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "#PWR02")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -7573,7 +7573,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8cf22077-f917-4041-97f2-ff5c39c33052")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR020"
 			(at 59.69 149.86 0)
 			(effects
 				(font
@@ -7623,7 +7623,7 @@
 		(instances
 			(project "pocket-caddy"
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "#PWR023")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -7706,7 +7706,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "904e6c37-c59e-4eb1-a37f-6fe90337cf4d")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR01"
 			(at 82.55 41.91 0)
 			(effects
 				(font
@@ -7756,7 +7756,7 @@
 		(instances
 			(project "pocket-caddy"
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "#PWR03")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -7771,7 +7771,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "91b95fac-8d19-473e-a3db-038b79524b7f")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR022"
 			(at 76.2 158.75 0)
 			(effects
 				(font
@@ -7821,7 +7821,7 @@
 		(instances
 			(project "pocket-caddy"
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "#PWR025")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -7837,7 +7837,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "93823ad6-1f0c-4905-a26c-e4c26846023e")
-		(property "Reference" "R5"
+		(property "Reference" "R7"
 			(at 220.98 66.04 90)
 			(effects
 				(font
@@ -7889,7 +7889,7 @@
 		(instances
 			(project "pocket-caddy"
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "R5")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -8040,7 +8040,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9fe7f336-65c0-42cc-b7a2-ce008a24c9bd")
-		(property "Reference" "R3"
+		(property "Reference" "R2"
 			(at 111.76 64.77 90)
 			(effects
 				(font
@@ -8101,7 +8101,7 @@
 		(instances
 			(project "pocket-caddy"
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "R3")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -8789,7 +8789,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cfba748a-2100-45e9-8329-4d7b85d16411")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR021"
 			(at 119.38 149.86 0)
 			(effects
 				(font
@@ -8839,7 +8839,7 @@
 		(instances
 			(project "pocket-caddy"
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "#PWR024")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -8924,7 +8924,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db7de721-3f75-400c-9dbb-84d4e9b5a8b1")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR017"
 			(at 100.33 137.16 0)
 			(effects
 				(font
@@ -8974,7 +8974,7 @@
 		(instances
 			(project "pocket-caddy"
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "#PWR020")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -8990,7 +8990,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e60f9f8d-e75b-4ee4-9303-43062b4c1d40")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR018"
 			(at 109.22 137.16 0)
 			(effects
 				(font
@@ -9040,7 +9040,7 @@
 		(instances
 			(project "pocket-caddy"
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "#PWR021")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -9163,7 +9163,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed60e916-839d-41ac-be88-65bfb4a4af37")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR023"
 			(at 86.36 157.48 0)
 			(effects
 				(font
@@ -9213,7 +9213,7 @@
 		(instances
 			(project "pocket-caddy"
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "#PWR026")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -9364,7 +9364,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f4b9a72f-f7f5-4b39-864e-c1c9344cc1a7")
-		(property "Reference" "R6"
+		(property "Reference" "R5"
 			(at 63.5 71.1199 0)
 			(effects
 				(font
@@ -9427,7 +9427,7 @@
 		(instances
 			(project "pocket-caddy"
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "R6")
+					(reference "R5")
 					(unit 1)
 				)
 			)
