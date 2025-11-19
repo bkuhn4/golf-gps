@@ -5436,7 +5436,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0eeca89f-11d7-431d-8d63-a4d2651119bf")
-		(property "Reference" "TP7"
+		(property "Reference" "TP3"
 			(at 97.79 38.6079 0)
 			(effects
 				(font
@@ -5487,7 +5487,7 @@
 		(instances
 			(project ""
 				(path "/2c77a8ba-b277-4959-adec-d3fc778c7960/7763c5b3-a08f-479a-9f6f-ea394e6f7159"
-					(reference "TP7")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -7898,15 +7898,15 @@
 	(symbol
 		(lib_id "Device:C_Small")
 		(at 246.38 64.77 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9caa209d-c84a-4305-adc7-48ecaa676029")
 		(property "Reference" "C3"
-			(at 243.84 63.5062 0)
+			(at 248.92 63.5062 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7915,7 +7915,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 243.84 66.0462 0)
+			(at 248.92 66.0462 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 0.9,
-          "width": 1.5
+          "drill": 1.1,
+          "height": 2.1,
+          "width": 2.1
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -60,58 +60,6 @@
       ],
       "drc_exclusions": [
         [
-          "clearance|216750000|78550000|0355f349-791d-49d5-b91f-2d0bac406611|88da3164-8909-471f-899c-e6a63714ae2c",
-          "Used for star ground point"
-        ],
-        [
-          "clearance|216750000|78550000|88da3164-8909-471f-899c-e6a63714ae2c|c32fad97-a00d-44bd-b0dc-49f547a9401c",
-          ""
-        ],
-        [
-          "hole_clearance|216750000|77950000|2295eb7c-8c06-4cd4-ab96-2a0f986f3abd|0355f349-791d-49d5-b91f-2d0bac406611",
-          "Used for star ground point"
-        ],
-        [
-          "hole_clearance|216750000|77950000|38d5efd6-5c75-4895-afd3-fe9ed096c1c9|0355f349-791d-49d5-b91f-2d0bac406611",
-          "Used for star ground point"
-        ],
-        [
-          "hole_clearance|216750000|78550000|38d5efd6-5c75-4895-afd3-fe9ed096c1c9|5d9cb4c0-aecd-4c84-88f9-baf9adfd1281",
-          "Used for star ground point"
-        ],
-        [
-          "hole_clearance|216750000|79150000|38d5efd6-5c75-4895-afd3-fe9ed096c1c9|c32fad97-a00d-44bd-b0dc-49f547a9401c",
-          "Used for star ground point"
-        ],
-        [
-          "lib_footprint_mismatch|200992500|109750000|d0256de8-8d92-47e7-97dc-3b4d58ba55f6|00000000-0000-0000-0000-000000000000",
-          "Extended pads for hand soldering"
-        ],
-        [
-          "lib_footprint_mismatch|214512500|84900000|ee907f9d-b7ed-4dee-b234-cf2e1b65bd5c|00000000-0000-0000-0000-000000000000",
-          "Adjusted to fit physical EG1218 switch"
-        ],
-        [
-          "lib_footprint_mismatch|217500000|78050000|4c985ad7-9f66-4ccc-9230-c0b02a86defe|00000000-0000-0000-0000-000000000000",
-          "Adjust size"
-        ],
-        [
-          "shorting_items|216450000|78550000|5d9cb4c0-aecd-4c84-88f9-baf9adfd1281|88da3164-8909-471f-899c-e6a63714ae2c",
-          ""
-        ],
-        [
-          "shorting_items|216750000|77950000|0355f349-791d-49d5-b91f-2d0bac406611|1138940d-f949-4ad6-a2ce-7833048e3b6c",
-          ""
-        ],
-        [
-          "shorting_items|216750000|79412300|5fb94e39-780b-46f4-961f-99176e4b7d43|c32fad97-a00d-44bd-b0dc-49f547a9401c",
-          ""
-        ],
-        [
-          "silk_overlap|0|0|754cc7fb-743c-4e3e-a839-7d62cf25563c|da1d130d-eb53-49ef-88b7-45cb6a63ef8a",
-          ""
-        ],
-        [
           "silk_overlap|167096983|80200000|4da8d255-2425-4457-9a0c-cb672408c32b|86636f9a-aa5b-488f-b8c0-ac00ed6f08dd",
           ""
         ],
@@ -124,28 +72,12 @@
           ""
         ],
         [
-          "silk_overlap|227201948|93983566|41bd66af-9983-4bbe-ba54-de266aa73a79|da1d130d-eb53-49ef-88b7-45cb6a63ef8a",
+          "silk_overlap|225161041|89045251|14838f55-f85d-48ef-8103-d42a701d1137|9f14d16d-02ce-4e46-8cd7-72e1a0b6510e",
           ""
         ],
         [
-          "solder_mask_bridge|216150000|78550000|5d9cb4c0-aecd-4c84-88f9-baf9adfd1281|38d5efd6-5c75-4895-afd3-fe9ed096c1c9",
-          "Used for star ground point"
-        ],
-        [
-          "solder_mask_bridge|216750000|77550000|0355f349-791d-49d5-b91f-2d0bac406611|38d5efd6-5c75-4895-afd3-fe9ed096c1c9",
-          "Used for star ground point"
-        ],
-        [
-          "solder_mask_bridge|216750000|79550000|c32fad97-a00d-44bd-b0dc-49f547a9401c|38d5efd6-5c75-4895-afd3-fe9ed096c1c9",
-          "Used for star ground point"
-        ],
-        [
-          "solder_mask_bridge|217000000|78175000|80480d3b-df9c-43fc-b78d-83ef54158430|38d5efd6-5c75-4895-afd3-fe9ed096c1c9",
-          "Used for star ground point"
-        ],
-        [
-          "solder_mask_bridge|217962500|78050000|80480d3b-df9c-43fc-b78d-83ef54158430|fd6010de-1cc5-42c7-8951-1ea276ce3034",
-          "Used for star ground point"
+          "silk_overlap|225182283|85993750|2a2f117e-cae9-4100-9878-d1107ed8b757|9f14d16d-02ce-4e46-8cd7-72e1a0b6510e",
+          ""
         ]
       ],
       "meta": {
