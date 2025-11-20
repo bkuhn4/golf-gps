@@ -37,11 +37,11 @@
 
 
 // --- Pin Definitions ---
-#define SDA 22
-#define SCL 23
+#define SDA 10
+#define SCL 4
 
-#define BUTTON1 18  // Up
-#define BUTTON2 19  // Down
+#define BUTTON1 9  // Up
+#define BUTTON2 20  // Down
 #define BUTTON3 21  // Select / Back (Hold)
 
 
