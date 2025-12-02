@@ -17,7 +17,7 @@
 
 #define BUTTON1 18  // Left
 #define BUTTON2 19  // Right
-#define BUTTON3 21  // Select / Back (Hold)
+#define BUTTON3 2  // Select / Back (Hold)
 
 // --- U8g2 Display Object Instantiation ---
 // This is the correct constructor for an SSD1306 128x32 display using

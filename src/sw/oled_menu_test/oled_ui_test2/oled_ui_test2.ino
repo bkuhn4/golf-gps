@@ -422,4 +422,3 @@ void drawActionScreen(const char* actionText) {
   u8g2.drawStr(23, 20, buffer);
   u8g2.sendBuffer();
 }
-*/

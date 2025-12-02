@@ -52,14 +52,14 @@
 #define SDA_PIN 10
 #define OLED_WAIT_TIME 1000
 #define GPS_EN_N_PIN 3
-#define GPS_RESET_N_PIN 2
+#define GPS_RESET_N_PIN 21
 #define SD_CS_PIN 5
 #define SPI_MOSI_PIN 6
 #define SPI_MISO_PIN 7
 #define SPI_SCK_PIN 8
 #define BTN_1_PIN 9
 #define BTN_2_PIN 20
-#define BTN_3_PIN 21
+#define BTN_3_PIN 2
 
 // --- GLOBAL OBJECTS ---
 #ifdef INITIALIZE_OLED
@@ -100,7 +100,7 @@ void performSdCardTest();
 void setup() {
   Serial.begin(115200);
   delay(2000);
-  Serial.println("\n--- Pocket Caddy Modular Hardware Test v2.2 ---");
+  Serial.println("\n--- Pocket Caddy Hardware Test ---");
 
   // Initialize Pins
   pinMode(BTN_1_PIN, INPUT_PULLUP);
