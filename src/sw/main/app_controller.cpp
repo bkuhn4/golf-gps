@@ -99,6 +99,17 @@ void AppController::refreshRenameProfileMenu(MenuItem* menuItems) {
     menuItems[SETTINGS_PROFILES_RENAME].numChildren = count + 1;
 }
 
+void AppController::refreshUnitsMenu(MenuItem* menuItems) {
+    Serial.println("Refreshing Units Menu...");
+    if (useMetric) {
+        menuItems[SETTINGS_UNITS_IMPERIAL].icon = epd_bitmap_blank_icon;
+        menuItems[SETTINGS_UNITS_METRIC].icon = epd_bitmap_check_icon;
+    } else {
+        menuItems[SETTINGS_UNITS_IMPERIAL].icon = epd_bitmap_check_icon;
+        menuItems[SETTINGS_UNITS_METRIC].icon = epd_bitmap_blank_icon;
+    }
+}
+
 void AppController::refreshShotLogClubs(MenuItem* menuItems) {
     if (!sdCard) return;
     Serial.println("Refreshing Shot Log Clubs...");
@@ -168,7 +179,7 @@ void AppController::updateTrackShotIcons(MenuItem* menuItems, String currentClub
     if (currentClub != "None") {
         menuItems[TS_SELECT_CLUB].icon = epd_bitmap_check_icon;
     } else {
-        menuItems[TS_SELECT_CLUB].icon = epd_bitmap_cross_icon;
+        menuItems[TS_SELECT_CLUB].icon = epd_bitmap_club_icon;
     }
 
     if (trackShot && trackShot->hasStartPoint()) {
@@ -183,7 +194,7 @@ void AppController::updateTrackShotIcons(MenuItem* menuItems, String currentClub
         menuItems[TS_SET_END].icon = epd_bitmap_golf_ball_icon;
     }
 
-    if (trackShot && trackShot->hasStartPoint() && trackShot->hasEndPoint() && gps && gps->isLocked()) {
+    if (trackShot && trackShot->hasStartPoint() && trackShot->hasEndPoint()) {
         menuItems[TS_MEASURE].icon = epd_bitmap_check_icon;
         menuItems[TS_LOG_SHOT].icon = epd_bitmap_folder_icon;
     } else {
@@ -249,7 +260,7 @@ void AppController::executeMenuAction(int itemIndex, MenuHandler* menu) {
     }
     // Handle Measure
     else if (itemIndex == TS_MEASURE) {
-        if (trackShot && trackShot->hasStartPoint() && trackShot->hasEndPoint() && gps && gps->isLocked()) {
+        if (trackShot && trackShot->hasStartPoint() && trackShot->hasEndPoint()) {
             double dist = trackShot->getDistance();
             float t = trackShot->getStartTemp();
             float h = trackShot->getStartHumid();
@@ -267,17 +278,16 @@ void AppController::executeMenuAction(int itemIndex, MenuHandler* menu) {
                 snprintf(envStr, 32, "%.0fC  %.0f%%", t, h);
             }
             
-            menu->drawShotResult("Club", distStr, envStr); // TODO: Pass actual club name
+            menu->drawShotResult(menu->getCurrentClub().c_str(), distStr, envStr);
             menu->setActionScreenTimer(5000);
         } else {
-            Serial.println("Cannot Measure: Missing Points or GPS Lock");
-            menu->drawActionScreen("Measure Failed");
-            menu->setActionScreenTimer(2000);
+            Serial.println("Cannot Measure: Missing Points");
+            // No action screen if unavailable
         }
     }
     // Handle Log Shot
     else if (itemIndex == TS_LOG_SHOT) {
-        if (trackShot && trackShot->hasStartPoint() && trackShot->hasEndPoint() && gps && gps->isLocked()) {
+        if (trackShot && trackShot->hasStartPoint() && trackShot->hasEndPoint()) {
              if (sdCard) {
                  SystemSettings settings = sdCard->loadSettings();
                  ShotData shot;
@@ -286,16 +296,15 @@ void AppController::executeMenuAction(int itemIndex, MenuHandler* menu) {
                  shot.distance = trackShot->getDistance();
                  shot.temperature = trackShot->getStartTemp();
                  shot.humidity = trackShot->getStartHumid();
-                 shot.date = gps->getDate();
-                 shot.time = gps->getTime();
+                 shot.date = trackShot->getStartDate();
+                 shot.time = trackShot->getStartTime();
                  
                  sdCard->logShot(settings.currentProfile, shot);
                  menu->drawActionScreen("Shot Logged!");
                  menu->setActionScreenTimer(2000);
              }
         } else {
-             menu->drawActionScreen("Cannot Log");
-             menu->setActionScreenTimer(2000);
+             // No action if unavailable
         }
     }
 
@@ -345,10 +354,8 @@ void AppController::executeMenuAction(int itemIndex, MenuHandler* menu) {
             sdCard->saveSettings(settings);
             useMetric = false; // Update cache
         }
-        menu->drawActionScreen("Set to Imperial");
-        menu->setActionScreenTimer(2000);
-        // Navigate back to Settings after action screen
-        menu->navigateTo(MAIN_SETTINGS, 0);
+        refreshUnitsMenu(menu->getMenuItems());
+        menu->requestUpdate();
     }
     else if (itemIndex == SETTINGS_UNITS_METRIC) {
         Serial.println("Setting Units to Metric");
@@ -358,10 +365,8 @@ void AppController::executeMenuAction(int itemIndex, MenuHandler* menu) {
             sdCard->saveSettings(settings);
             useMetric = true; // Update cache
         }
-        menu->drawActionScreen("Set to Metric");
-        menu->setActionScreenTimer(2000);
-        // Navigate back to Settings after action screen
-        menu->navigateTo(MAIN_SETTINGS, 0);
+        refreshUnitsMenu(menu->getMenuItems());
+        menu->requestUpdate();
     }
     // Handle Profiles Change Menu (Dynamic Load)
     else if (itemIndex == SETTINGS_PROFILES_CHANGE) {
@@ -474,6 +479,19 @@ float AppController::getBatteryCurrent() {
 }
 
 void AppController::update(MenuHandler* menu) {
+    // Update GPS if needed
+    if (gps) {
+        bool gpsNeeded = false;
+        // Need GPS if viewing the GPS Sensor screen
+        if (currentSensorView == SENSOR_GPS) gpsNeeded = true;
+        // Need GPS if in the Track Shot menu (to show lock status or prepare for shot)
+        if (menu->getCurrentMenuIndex() == MAIN_TRACK_SHOT) gpsNeeded = true;
+        
+        if (gpsNeeded) {
+            gps->update();
+        }
+    }
+
     if (state == STATE_WAITING_FOR_PROFILE_NAME) {
         if (Serial.available() > 0) {
             String name = Serial.readStringUntil('\n');

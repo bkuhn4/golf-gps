@@ -2,35 +2,32 @@
    PROJECT:     I2C Scanner with OLED Display and GPIO Control
    AUTHOR:      Modified from various online examples
    DATE:        11/12/2025
-   VERSION:     1.2
+   VERSION:     1.3
 
    DESCRIPTION: This sketch initializes GPIO pins 2 and 3, initializes the
                 I2C bus, scans for connected devices, and prints the
                 addresses of any found devices to the Serial Monitor and a
-                128x32 SSD1306 OLED display.
+                128x64 SSD1306 OLED display using U8g2.
  ******************************************************************************/
 
 /* --- Tools Setup ---
   Board: esp32 > ESP32C3 Dev Module
 */
 
+#include <Arduino.h>
 #include <Wire.h>
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
+#include <U8g2lib.h>
 
 // --- PIN DEFINITIONS (for ESP32C3) ---
 #define SCL_PIN 4  // I2C Clock
 #define SDA_PIN 10 // I2C Data
-#define GPIO2   2  // GPS Reset (active low)
+#define GPS_RESET_PIN 21  // GPS Reset (active low)
 #define GPIO3   3  // GPS enable (active low)
 
 
 // --- OLED Display Setup ---
-#define SCREEN_WIDTH 128 // OLED display width, in pixels
-#define SCREEN_HEIGHT 32 // OLED display height, in pixels
-#define OLED_RESET    -1 // Reset pin # (or -1 if sharing Arduino reset pin)
-
-Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+// U8g2 Constructor for 128x64 OLED
+U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, /* reset=*/U8X8_PIN_NONE, /* clock=*/SCL_PIN, /* data=*/SDA_PIN);
 
 // --- SETUP FUNCTION ---
 // This function runs once when the board is powered on or reset.
@@ -43,11 +40,11 @@ void setup() {
 
   // --- GPIO SETUP ---
   // Set GPIO pins 2 and 3 as outputs
-  pinMode(GPIO2, OUTPUT);
+  pinMode(GPS_RESET_PIN, OUTPUT);
   pinMode(GPIO3, OUTPUT);
 
   // Set GPIO 2 HIGH and GPIO 3 LOW
-  digitalWrite(GPIO2, HIGH); // Do not reset GPS
+  digitalWrite(GPS_RESET_PIN, HIGH); // Do not reset GPS
 
   
   digitalWrite(GPIO3, LOW); // Power GPS
@@ -58,14 +55,14 @@ void setup() {
   Wire.begin(SDA_PIN, SCL_PIN);
 
   // Initialize OLED display
-  if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { // Address 0x3C for 128x32
-    Serial.println(F("SSD1306 allocation failed"));
+  if(!u8g2.begin()) {
+    Serial.println(F("U8g2 allocation failed"));
     for(;;); // Don't proceed, loop forever
   }
 
   // Clear the display buffer
-  display.clearDisplay();
-  display.display();
+  u8g2.clearBuffer();
+  u8g2.sendBuffer();
 }
 
 // --- MAIN LOOP ---
@@ -77,15 +74,16 @@ void loop() {
   Serial.println("Scanning for I2C devices...");
 
   // Clear the display and set text properties for each scan
-  display.clearDisplay();
-  display.setTextSize(1);
-  display.setTextColor(SSD1306_WHITE);
-  display.setCursor(0, 0);
-  display.println("Scanning for I2C...");
-  display.display();
+  u8g2.clearBuffer();
+  u8g2.setFont(u8g2_font_6x10_tf); // Small font
+  u8g2.setCursor(0, 10);
+  u8g2.print("Scanning for I2C...");
+  u8g2.sendBuffer();
   delay(100); // Short delay to show "Scanning" message
 
   nDevices = 0;
+  int yPos = 22; // Start printing results below the header
+
   // The I2C address space is 7-bits, from 0 to 127.
   // Addresses 0-7 are reserved.
   for(address = 8; address < 127; address++ ) {
@@ -103,11 +101,15 @@ void loop() {
       Serial.println("  !");
 
       // Print to OLED
-      display.print("Found: 0x");
-      if (address < 16)
-        display.print("0");
-      display.println(address, HEX);
-      display.display();
+      if (yPos < 64) { // Only print if it fits on screen
+          u8g2.setCursor(0, yPos);
+          u8g2.print("Found: 0x");
+          if (address < 16)
+            u8g2.print("0");
+          u8g2.print(address, HEX);
+          yPos += 10;
+      }
+      u8g2.sendBuffer();
 
       nDevices++;
     }
@@ -122,16 +124,20 @@ void loop() {
   if (nDevices == 0) {
     Serial.println("No I2C devices found\n");
     // Display message on OLED if no devices are found
-    display.clearDisplay();
-    display.setCursor(0, 0);
-    display.println("No I2C devices");
-    display.println("found.");
-    display.display();
+    u8g2.clearBuffer();
+    u8g2.setCursor(0, 10);
+    u8g2.print("No I2C devices");
+    u8g2.setCursor(0, 22);
+    u8g2.print("found.");
+    u8g2.sendBuffer();
   } else {
     Serial.println("Scan complete\n");
     // Optionally add a "Scan complete" message to the OLED
-    display.println("Scan complete.");
-    display.display();
+    if (yPos < 64) {
+        u8g2.setCursor(0, yPos);
+        u8g2.print("Scan complete.");
+        u8g2.sendBuffer();
+    }
   }
 
   delay(5000); // Wait 5 seconds before scanning again

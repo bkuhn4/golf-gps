@@ -1,12 +1,8 @@
 #include "sd_card.h"
 
-
-
-
 SdCardHandler::SdCardHandler() : spi_sd(FSPI) {
     mounted = false;
 }
-
 
 bool SdCardHandler::begin() {
     Serial.print("Initializing SD Card... ");
@@ -339,16 +335,27 @@ int SdCardHandler::getShotsForClub(const char* profileName, const char* club, Sh
 void SdCardHandler::logShot(const char* profileName, const ShotData& shot) {
     if (!mounted) return;
     
+    // Ensure profiles directory exists
+    ensureDirectory("/profiles");
+
     char path[64];
     snprintf(path, sizeof(path), "/profiles/%s.csv", profileName);
     
-    // Create profile if it doesn't exist
+    // Create profile if it doesn't exist (ensures header on first creation)
     if (!SD.exists(path)) {
         createProfile(profileName);
     }
 
-    File file = SD.open(path, FILE_WRITE);
+    // Open the file in append mode to avoid truncation
+    // FILE_APPEND is critical here to add to the end of the file
+    File file = SD.open(path, FILE_APPEND);
     if (file) {
+        // If the file is empty (size == 0), write the header to restore missing headers
+        if (file.size() == 0) {
+            file.println("Club,Distance,Temp,Humidity,Date,Time");
+        }
+
+        // Write CSV line: Club,Distance,Temp,Humidity,Date,Time
         file.print(shot.club);
         file.print(",");
         file.print(shot.distance);
@@ -360,10 +367,13 @@ void SdCardHandler::logShot(const char* profileName, const ShotData& shot) {
         file.print(shot.date);
         file.print(",");
         file.println(shot.time);
+        
         file.close();
         Serial.println("Shot logged.");
     } else {
-        Serial.println("Error logging shot.");
+        Serial.print("Error logging shot: Could not open ");
+        Serial.print(path);
+        Serial.println(" for appending.");
     }
 }
 

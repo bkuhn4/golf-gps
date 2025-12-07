@@ -12,20 +12,20 @@
 #include <Wire.h>
 
 // --- Pin Definitions ---
-#define SDA 22
-#define SCL 23
+#define SDA 10
+#define SCL 4
 
-#define BUTTON1 18  // Left
-#define BUTTON2 19  // Right
-#define BUTTON3 2  // Select / Back (Hold)
+#define BUTTON1 9   // Down
+#define BUTTON2 20  // Up
+#define BUTTON3 2   // Select / Back (Hold)
 
 // --- U8g2 Display Object Instantiation ---
-// This is the correct constructor for an SSD1306 128x32 display using
+// This is the correct constructor for an SSD1306 128x64 display using
 // hardware I2C on the ESP32.
 // U8G2_R0: No rotation
 // U8X8_PIN_NONE: No reset pin is being used
 // SCL, SDA: Your I2C pins
-U8G2_SSD1306_128X32_UNIVISION_F_HW_I2C u8g2(U8G2_R0, /* reset=*/ U8X8_PIN_NONE, /* clock=*/ SCL, /* data=*/ SDA);
+U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, /* reset=*/ U8X8_PIN_NONE, /* clock=*/ SCL, /* data=*/ SDA);
 
 
 // --- BITMAP DATA (This format is compatible with U8g2) ---

@@ -14,6 +14,7 @@ ButtonHandler::ButtonHandler() {
     currentB3State = HIGH;
     lastB3DebounceTime = 0;
     b3PressStartTime = 0;
+    lastLongPressActionTime = 0;
     b3IsHeld = false;
     b3LongActionTaken = false;
 }
@@ -29,7 +30,7 @@ ButtonEvent ButtonHandler::checkButtons() {
     unsigned long currentMillis = millis();
 
     // -----------------------------
-    // BUTTON 1 (UP) - Action on Release
+    // BUTTON 1 (DOWN) - Action on Release
     // -----------------------------
     int reading1 = digitalRead(BTN_1_PIN);
     if (reading1 != lastB1State) {
@@ -43,14 +44,14 @@ ButtonEvent ButtonHandler::checkButtons() {
             // Note: Logic inverted because PULLUP: LOW is pressed, HIGH is released.
             // If currentB1State becomes HIGH, it means it was LOW (pressed) and is now HIGH (released).
             if (currentB1State == HIGH) {
-                return EVENT_UP;
+                return EVENT_DOWN;
             }
         }
     }
     lastB1State = reading1;
 
     // -----------------------------
-    // BUTTON 2 (DOWN) - Action on Release
+    // BUTTON 2 (UP) - Action on Release
     // -----------------------------
     int reading2 = digitalRead(BTN_2_PIN);
     if (reading2 != lastB2State) {
@@ -61,7 +62,7 @@ ButtonEvent ButtonHandler::checkButtons() {
         if (reading2 != currentB2State) {
             currentB2State = reading2;
             if (currentB2State == HIGH) {
-                return EVENT_DOWN;
+                return EVENT_UP;
             }
         }
     }
@@ -99,10 +100,19 @@ ButtonEvent ButtonHandler::checkButtons() {
     // -----------------------------
     // BUTTON 3 HOLD CHECK (Running Continuously)
     // -----------------------------
-    if (b3IsHeld && !b3LongActionTaken) {
+    if (b3IsHeld) {
         if ((currentMillis - b3PressStartTime) > LONG_PRESS_DURATION) {
-            b3LongActionTaken = true; // Prevent short press action later
-            return EVENT_BACK;
+            // Initial Long Press
+            if (!b3LongActionTaken) {
+                b3LongActionTaken = true;
+                lastLongPressActionTime = currentMillis;
+                return EVENT_BACK;
+            } 
+            // Continuous Hold (Repeat Action)
+            else if ((currentMillis - lastLongPressActionTime) > REPEAT_DELAY) {
+                lastLongPressActionTime = currentMillis;
+                return EVENT_BACK;
+            }
         }
     }
 

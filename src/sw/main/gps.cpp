@@ -1,7 +1,12 @@
 #include "gps.h"
 
 GpsHandler::GpsHandler() {
-    // Constructor
+    _latitude = 0;
+    _longitude = 0;
+    _siv = 0;
+    _fixType = 0;
+    _time = 0;
+    _date = 0;
 }
 
 bool GpsHandler::begin() {
@@ -27,54 +32,59 @@ bool GpsHandler::begin() {
     
     // Configuration
     myGNSS.setI2COutput(COM_TYPE_UBX);
-    myGNSS.saveConfiguration();
+    myGNSS.setNavigationFrequency(GPS_UPDATE_RATE_HZ); // Set sample rate
+    // myGNSS.saveConfiguration(); // Optional
     return true;
 }
 
-long GpsHandler::getLatitude() {
-    // Check for fresh data, but always return the latest known value
-    myGNSS.getPVT(); 
-    return myGNSS.getLatitude();
-}
-
-long GpsHandler::getLongitude() {
-    myGNSS.getPVT();
-    return myGNSS.getLongitude();
-}
-
-byte GpsHandler::getSIV() {
-    myGNSS.getPVT();
-    return myGNSS.getSIV();
-}
-
-bool GpsHandler::isLocked() {
-    // Simple check: do we have a fix type?
-    // 0 = No Fix, 1 = Dead Reckoning, 2 = 2D, 3 = 3D, 4 = GNSS + Dead Reckoning, 5 = Time only
-    byte fixType = myGNSS.getFixType();
-    return (fixType >= 2); 
-}
-
-uint32_t GpsHandler::getTime() {
-    // Returns time in HHMMSS format
+bool GpsHandler::update() {
+    // Poll for new data. getPVT returns true only if new data is available.
     if (myGNSS.getPVT()) {
+        _latitude = myGNSS.getLatitude();
+        _longitude = myGNSS.getLongitude();
+        _siv = myGNSS.getSIV();
+        _fixType = myGNSS.getFixType();
+        
+        // Time/Date
         uint8_t hour = myGNSS.getHour();
         uint8_t minute = myGNSS.getMinute();
         uint8_t second = myGNSS.getSecond();
-        return (hour * 10000) + (minute * 100) + second;
+        _time = (hour * 10000) + (minute * 100) + second;
+
+        uint8_t day = myGNSS.getDay();
+        uint8_t month = myGNSS.getMonth();
+        uint16_t year = myGNSS.getYear();
+        uint8_t shortYear = year % 100;
+        _date = (day * 10000) + (month * 100) + shortYear;
+        
+        return true;
     }
-    return 0;
+    return false;
+}
+
+int32_t GpsHandler::getLatitude() {
+    return _latitude;
+}
+
+int32_t GpsHandler::getLongitude() {
+    return _longitude;
+}
+
+byte GpsHandler::getSIV() {
+    return _siv;
+}
+
+bool GpsHandler::isLocked() {
+    // 3 = 3D Fix
+    return (_fixType == 3); 
+}
+
+uint32_t GpsHandler::getTime() {
+    return _time;
 }
 
 uint32_t GpsHandler::getDate() {
-    // Returns date in DDMMYY format
-    if (myGNSS.getPVT()) {
-        uint8_t day = myGNSS.getDay();
-        uint8_t month = myGNSS.getMonth();
-        uint16_t year = myGNSS.getYear(); // Returns full year e.g. 2025
-        uint8_t shortYear = year % 100;
-        return (day * 10000) + (month * 100) + shortYear;
-    }
-    return 0;
+    return _date;
 }
 
 void GpsHandler::reset() {

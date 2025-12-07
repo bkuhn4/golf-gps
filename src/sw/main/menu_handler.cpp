@@ -53,7 +53,7 @@ void MenuHandler::initMenuItems() {
   menuItems[SENSOR_BACK]       = { "Back",             epd_bitmap_back_arrow_icon, MAIN_SENSOR_INFO, 0, 0, false };
 
   // --- LEVEL 2: SETTINGS ---
-  menuItems[SETTINGS_PROFILES] = { "Profiles", epd_bitmap_user_icon, MAIN_SETTINGS, SETTINGS_PROFILES_CHANGE, 4, false };
+  menuItems[SETTINGS_PROFILES] = { "Profiles", epd_bitmap_user_icon, MAIN_SETTINGS, SETTINGS_PROFILES_CHANGE, 5, false };
   menuItems[SETTINGS_RESET]   = { "Reset GPS",    epd_bitmap_gps_icon,     MAIN_SETTINGS, 0, 0, true };
   menuItems[SETTINGS_BATTERY] = { "Battery Info", epd_bitmap_battery_icon, MAIN_SETTINGS, 0, 0, true };
   menuItems[SETTINGS_UNITS]   = { "Change Units", epd_bitmap_placeholder_icon, MAIN_SETTINGS, SETTINGS_UNITS_IMPERIAL, 3, false };
@@ -200,7 +200,11 @@ void MenuHandler::goBack() {
         ui.currentSelection = previousSelection;
         displayNeedsUpdate = true;
     } else {
-        Serial.println("Cannot Go Back: At Root");
+        // At Root - Scroll to top
+        if (ui.currentSelection != 0) {
+            ui.currentSelection = 0;
+            displayNeedsUpdate = true;
+        }
     }
 }
 
@@ -211,7 +215,6 @@ void MenuHandler::handleInput(ButtonEvent event) {
     }
 
     if (actionScreenVisibleUntil > 0) {
-        Serial.println("Action screen active, ignoring input.");
         return;
     }
 
@@ -266,6 +269,9 @@ void MenuHandler::handleInput(ButtonEvent event) {
                 }
                 if (selectedItemIndex == SETTINGS_PROFILES_RENAME && app) {
                     app->refreshRenameProfileMenu(menuItems);
+                }
+                if (selectedItemIndex == SETTINGS_UNITS && app) {
+                    app->refreshUnitsMenu(menuItems);
                 }
 
                 // Handle Back Navigation
@@ -487,6 +493,10 @@ void MenuHandler::drawSensorScreen() {
 
     u8g2->sendBuffer();
     Serial.println("Sensor Screen Drawn.");
+}
+
+int MenuHandler::getCurrentMenuIndex() const {
+    return ui.currentMenuIndex;
 }
 
 void MenuHandler::drawShotResult(const char* club, const char* dist, const char* env) {

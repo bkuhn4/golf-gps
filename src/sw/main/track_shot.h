@@ -3,14 +3,12 @@
 
 #include <Arduino.h>
 #include "gps.h"
-
-// Removed U8g2lib.h and button_handler.h as they are no longer needed here
-// Removed TrackShotState enum
+#include <U8g2lib.h>
 
 class TrackShot {
 public:
     TrackShot();
-    bool begin(GpsHandler* gpsObj);
+    bool begin(GpsHandler* gpsObj, U8G2_SSD1306_128X64_NONAME_F_HW_I2C* displayObj);
     
     // GPS Actions
     // Returns true if successful (GPS locked), false otherwise
@@ -29,9 +27,12 @@ public:
     double getEndLon();
     float getStartTemp();
     float getStartHumid();
+    uint32_t getStartDate();
+    uint32_t getStartTime();
 
 private:
     GpsHandler* gps;
+    U8G2_SSD1306_128X64_NONAME_F_HW_I2C* u8g2; // for progress bar
     
     // Coordinates
     double startLat;
@@ -42,12 +43,15 @@ private:
     // Environment at start
     float startTemp;
     float startHumid;
+    uint32_t startDate;
+    uint32_t startTime;
     
     bool startSet;
     bool endSet;
     
     // Helper to get averaged position
     bool getAveragedPosition(double& lat, double& lon, int samples = 10);
+    void drawAveragingProgress(int percent);
 };
 
 #endif // TRACK_SHOT_H

@@ -7,8 +7,8 @@
  *              *** MODIFIED: Long press updates screen immediately upon duration expiry. ***
  *
  * Navigation:
- * - Button 1 (Up):    Moves the selection up (Action on Release).
- * - Button 2 (Down):  Moves the selection down (Action on Release).
+ * - Button 1 (Down):  Moves the selection down (Action on Release).
+ * - Button 2 (Up):    Moves the selection up (Action on Release).
  * - Button 3 (Short): Selects an item (Action on Release).
  * - Button 3 (Hold):  Goes back to the previous menu level (Action immediately after hold duration).
  */
@@ -32,12 +32,12 @@
 #define SDA 10
 #define SCL 4
 
-#define BUTTON1 9   // Up
-#define BUTTON2 20  // Down
-#define BUTTON3 2  // Select / Back (Hold)
+#define BUTTON1 9   // Down
+#define BUTTON2 20  // Up
+#define BUTTON3 2   // Select / Back (Hold)
 
 // --- U8g2 Display Object Instantiation ---
-U8G2_SSD1306_128X32_UNIVISION_F_HW_I2C u8g2(U8G2_R0, /* reset=*/U8X8_PIN_NONE, /* clock=*/SCL, /* data=*/SDA);
+U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, /* reset=*/U8X8_PIN_NONE, /* clock=*/SCL, /* data=*/SDA);
 
 
 // --- BITMAP DATA ---
@@ -249,7 +249,7 @@ void checkButtons() {
   unsigned long currentMillis = millis();
 
   // -----------------------------
-  // BUTTON 1 (UP) - Action on Release
+  // BUTTON 1 (DOWN) - Action on Release
   // -----------------------------
   int reading1 = digitalRead(BUTTON1);
   if (reading1 != lastB1State) {
@@ -261,10 +261,10 @@ void checkButtons() {
       currentB1State = reading1;
       // Trigger action only when transitioning from HIGH to LOW (Release)
       if (currentB1State == HIGH) {
-        DEBUG_PRINTLN("Button 1 Released (UP)");
-        ui.currentSelection--;
-        if (ui.currentSelection < 0) {
-          ui.currentSelection = menuItems[ui.currentMenuIndex].numChildren - 1;
+        DEBUG_PRINTLN("Button 1 Released (DOWN)");
+        ui.currentSelection++;
+        if (ui.currentSelection >= menuItems[ui.currentMenuIndex].numChildren) {
+          ui.currentSelection = 0;
         }
         displayNeedsUpdate = true;
       }
@@ -273,7 +273,7 @@ void checkButtons() {
   lastB1State = reading1;
 
   // -----------------------------
-  // BUTTON 2 (DOWN) - Action on Release
+  // BUTTON 2 (UP) - Action on Release
   // -----------------------------
   int reading2 = digitalRead(BUTTON2);
   if (reading2 != lastB2State) {
@@ -285,10 +285,10 @@ void checkButtons() {
       currentB2State = reading2;
       // Trigger action only when transitioning from HIGH to LOW (Release)
       if (currentB2State == HIGH) {
-        DEBUG_PRINTLN("Button 2 Released (DOWN)");
-        ui.currentSelection++;
-        if (ui.currentSelection >= menuItems[ui.currentMenuIndex].numChildren) {
-          ui.currentSelection = 0;
+        DEBUG_PRINTLN("Button 2 Released (UP)");
+        ui.currentSelection--;
+        if (ui.currentSelection < 0) {
+          ui.currentSelection = menuItems[ui.currentMenuIndex].numChildren - 1;
         }
         displayNeedsUpdate = true;
       }

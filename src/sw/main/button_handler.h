@@ -11,8 +11,8 @@
 // Button Events
 enum ButtonEvent {
     EVENT_NONE = 0,
-    EVENT_UP,      // Button 1 Released
-    EVENT_DOWN,    // Button 2 Released
+    EVENT_UP,      // Button 2 Released
+    EVENT_DOWN,    // Button 1 Released
     EVENT_SELECT,  // Button 3 Released (Short Press)
     EVENT_BACK     // Button 3 Held (Long Press)
 };
@@ -25,8 +25,9 @@ public:
 
 private:
     // Constants
-    const unsigned long LONG_PRESS_DURATION = 500;
+    const unsigned long LONG_PRESS_DURATION = 400;
     const unsigned long DEBOUNCE_DELAY = 40;
+    const unsigned long REPEAT_DELAY = 500; // Delay between repeated back actions
 
     // Button 1 State
     int lastB1State;
@@ -43,6 +44,7 @@ private:
     int currentB3State;
     unsigned long lastB3DebounceTime;
     unsigned long b3PressStartTime;
+    unsigned long lastLongPressActionTime; // Track last repeat action
     bool b3IsHeld;
     bool b3LongActionTaken;
 };

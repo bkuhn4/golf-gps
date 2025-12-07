@@ -2,7 +2,7 @@
    PROJECT:     Pocket Caddy
    FILE:        main.ino
    AUTHOR:      Brady Kuhn, Bryan York
-   DATE:        11/22/2025
+   DATE:        12/6/2025
    VERSION:     0.1
 
    DESCRIPTION: Main application file for the Pocket Caddy device.
@@ -56,7 +56,7 @@ void setup() {
   if (!sdCard.begin()) Serial.println("SD Card Init Failed");
 
   // Initialize Modules
-  trackShot.begin(&gps);
+  trackShot.begin(&gps, &display.u8g2);
   app.begin(&sdCard, &gps, &tempSensor, &battery, &trackShot);
   menu.begin(&display.u8g2, &app);
 

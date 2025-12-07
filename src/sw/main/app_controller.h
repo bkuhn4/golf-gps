@@ -25,6 +25,7 @@ public:
     void refreshChangeProfileMenu(MenuItem* menuItems);
     void refreshRemoveProfileMenu(MenuItem* menuItems);
     void refreshRenameProfileMenu(MenuItem* menuItems);
+    void refreshUnitsMenu(MenuItem* menuItems);
     void refreshShotLogClubs(MenuItem* menuItems);
     void refreshShotLogShots(MenuItem* menuItems, const char* club);
     void updateTrackShotIcons(MenuItem* menuItems, String currentClub);

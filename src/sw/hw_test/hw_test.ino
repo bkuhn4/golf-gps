@@ -30,7 +30,7 @@
 #include <SPI.h>                                   // SPI
 #include <SD.h>                                    // SD Card
 #include <U8g2lib.h>                               // OLED Graphics Library
-#include <SparkFun_u-blox_GNSS_Arduino_Library.h>  // GPS module
+#include <SparkFun_u-blox_GNSS_v3.h>  // GPS module
 #include <SparkFunBQ27441.h>                       // LiPo fuel gauge
 #include "Adafruit_SHT31.h"                        // Temp/humidity sensor
 
@@ -63,7 +63,7 @@
 
 // --- GLOBAL OBJECTS ---
 #ifdef INITIALIZE_OLED
-U8G2_SSD1306_128X32_UNIVISION_F_HW_I2C u8g2(U8G2_R0, /* reset=*/U8X8_PIN_NONE, /* clock=*/SCL_PIN, /* data=*/SDA_PIN);
+U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, /* reset=*/U8X8_PIN_NONE, /* clock=*/SCL_PIN, /* data=*/SDA_PIN);
 #endif
 
 #ifdef INITIALIZE_GPS

@@ -20,9 +20,9 @@
 // --- Pin Definitions ---
 #define SDA 10
 #define SCL 4
-#define BUTTON1 9   // Up
-#define BUTTON2 20  // Down
-#define BUTTON3 2  // Select / Back
+#define BUTTON1 9   // Down
+#define BUTTON2 20  // Up
+#define BUTTON3 2   // Select / Back
 
 // --- Display Setup ---
 U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, U8X8_PIN_NONE, SCL, SDA);
@@ -261,16 +261,16 @@ void loop(void) {
 void checkButtons() {
   unsigned long currentMillis = millis();
 
-  // UP BUTTON
+  // DOWN BUTTON
   int reading1 = digitalRead(BUTTON1);
   if (reading1 != lastB1State) lastB1DebounceTime = currentMillis;
   if ((currentMillis - lastB1DebounceTime) > DEBOUNCE_DELAY) {
     if (reading1 != currentB1State) {
       currentB1State = reading1;
       if (currentB1State == HIGH) { 
-        ui.currentSelection--;
-        if (ui.currentSelection < 0) {
-          ui.currentSelection = menuItems[ui.currentMenuIndex].numChildren - 1;
+        ui.currentSelection++;
+        if (ui.currentSelection >= menuItems[ui.currentMenuIndex].numChildren) {
+          ui.currentSelection = 0;
         }
         displayNeedsUpdate = true;
       }
@@ -278,16 +278,16 @@ void checkButtons() {
   }
   lastB1State = reading1;
 
-  // DOWN BUTTON
+  // UP BUTTON
   int reading2 = digitalRead(BUTTON2);
   if (reading2 != lastB2State) lastB2DebounceTime = currentMillis;
   if ((currentMillis - lastB2DebounceTime) > DEBOUNCE_DELAY) {
     if (reading2 != currentB2State) {
       currentB2State = reading2;
       if (currentB2State == HIGH) { 
-        ui.currentSelection++;
-        if (ui.currentSelection >= menuItems[ui.currentMenuIndex].numChildren) {
-          ui.currentSelection = 0;
+        ui.currentSelection--;
+        if (ui.currentSelection < 0) {
+          ui.currentSelection = menuItems[ui.currentMenuIndex].numChildren - 1;
         }
         displayNeedsUpdate = true;
       }
