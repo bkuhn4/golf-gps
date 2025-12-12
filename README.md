@@ -20,15 +20,27 @@ The Pocket Caddy hardware is built around the ESP32-C3 microcontroller and inclu
 *   **Microcontroller:** Espressif ESP32-C3-WROOM-02
 *   **GNSS Module:** u-blox NEO-M9N (High-precision GPS/GLONASS/Galileo)
 *   **GNSS Antenna:** Taoglas SGGP.25.4.A.02
-*   **Display:** 0.91" OLED I2C Display (128x32 pixels)
+*   **Display:** 0.96" OLED I2C Display (128x64 pixels)
 *   **Sensors:**
     *   Sensirion SHT30-DIS (Temperature & Humidity)
-    *   TI BQ27411-G1 (LiPo Fuel Gauge)
+    *   TI BQ27441-G1 (LiPo Fuel Gauge)
 *   **Storage:** Micro SD Card Slot
 *   **Power:**
     *   USB-C Connector (Charging & Data)
     *   LiPo Battery Connector
     *   Coin Cell Battery Backup (for GNSS hot start)
+
+## Pin Configuration
+
+| Component | Pin Name | ESP32-C3 Pin |
+| :--- | :--- | :--- |
+| **Buttons** | Button 1 (Down) | GPIO 9 |
+| | Button 2 (Up) | GPIO 20 |
+| | Button 3 (Select) | GPIO 2 |
+| **I2C Bus** | SDA | GPIO 10 |
+| | SCL | GPIO 4 |
+| **GPS** | Enable | GPIO 3 |
+| | Reset | GPIO 21 |
 
 ## Dependencies
 
@@ -59,8 +71,8 @@ To ensure the device communicates correctly over USB for serial monitoring and s
 
 ### Controls
 The device is operated using three buttons:
--   **Button 1 (Up):** Navigate up in menus.
--   **Button 2 (Down):** Navigate down in menus.
+-   **Button 1 (Down):** Navigate down in menus.
+-   **Button 2 (Up):** Navigate up in menus.
 -   **Button 3 (Select/Back):**
     -   **Short Press:** Select item / Confirm action.
     -   **Long Press:** Go back to the previous menu.
